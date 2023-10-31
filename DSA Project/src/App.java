@@ -6,14 +6,14 @@ class App {
         researchCompilation.researchCompileInsert();
         System.out.println(researchCompilation.nodeMap);
 
-        // String nodeId = "Daniel Thompson"; // Replace this with the actual node ID you want to retrieve
-        // Node node = researchCompilation.nodeMap.get(nodeId);
-        // if (node != null) {
-        //     String researchTitle = node.getResearchTitle();
-        //     System.out.println("Research Title: " + researchTitle);
-        // } else {
-        //     System.out.println("Node with ID " + nodeId + " not found.");
-        // }
+        String nodeId = "10.5678/ijkl9012"; // Replace this with the actual node ID you want to retrieve
+        Node node = researchCompilation.nodeMap.get(nodeId);
+        if (node != null) {
+            String researchTitle = node.getResearchGenresString();
+            System.out.println("Research Title: " + researchTitle);
+        } else {
+            System.out.println("Node with ID " + nodeId + " not found.");
+        }
     }
 }
 
@@ -37,11 +37,11 @@ class ResearchCompilation{
 
             
             String[] inputGenres;
-            if (entry[5] instanceof String[]) {
-                inputGenres = (String[]) entry[5];
+            if (entry[11] instanceof String[]) {
+                inputGenres = (String[]) entry[11];
             } else {
                 // Handle the case where entry[5] is a single string, convert it to an array
-                inputGenres = new String[]{(String) entry[5]};
+                inputGenres = new String[]{(String) entry[11]};
             }
 
             Node researchNode = new Node(inputTitle, inputAuthor, inputYearPublished, inputDOI, inputCourse, inputGenres);
@@ -51,88 +51,3 @@ class ResearchCompilation{
     
 }
 
-class Node {
-
-    private String researchTitle;
-    private String researchAuthor;
-    private String yearPublished;
-    private String researchDOI;
-    private String researchCourse;
-    private String[] researchGenres; 
-
-    public Node(String researchTitle, String researchAuthor, String yearPublished, String researchDOI, String researchCourse, String[] researchGenres) {
-        this.researchTitle = researchTitle;
-        this.researchAuthor = researchAuthor;
-        this.yearPublished = yearPublished;
-        this.researchDOI = researchDOI;
-        this.researchCourse = researchCourse;
-        // this.pdfFile = pdfFile;
-        this.researchGenres = researchGenres;
-    }
-
-    // public int getId() {
-    //     return id;
-    // }
-
-    // public void setId(int id) {
-    //     this.id = id;
-    // }
-
-    public String getResearchTitle() {
-        return researchTitle;
-    }
-
-    public void setResearchTitle(String researchTitle) {
-        this.researchTitle = researchTitle;
-    }
-
-    public String getResearchAuthor() {
-        return researchAuthor;
-    }
-
-    public void setResearchAuthor(String researchAuthor) {
-        this.researchAuthor = researchAuthor;
-    }
-
-    public String getYearPublished() {
-        return yearPublished;
-    }
-
-    public void setYearPublished(String yearPublished) {
-        this.yearPublished = yearPublished;
-    }
-
-    public String getResearchDOI() {
-        return researchDOI;
-    }
-
-    public void setResearchDOI(String researchDOI) {
-        this.researchDOI = researchDOI;
-    }
-
-    public String getResearchCourse() {
-        return researchCourse;
-    }
-
-    public void setResearchCourse(String researchCourse) {
-        this.researchCourse = researchCourse;
-    }
-
-    // public String getPdfFile() {
-    //     return pdfFile;
-    // }
-
-    // public void setPdfFile(String pdfFile) {
-    //     this.pdfFile = pdfFile;
-    // }
-
-    public String[] getResearchGenres() {
-        return researchGenres;
-    }
-
-    public void setResearchGenres(String[] researchGenres) {
-        this.researchGenres = researchGenres;
-    }
-
-    
-}
