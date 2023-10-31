@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class LogIn {
     class User {
         String username;
@@ -29,6 +31,23 @@ public class LogIn {
                 current = current.next;
             }
             return false; // if user does not exist.
+        }
+
+        public void registerUser(Scanner scanner) {
+        System.out.print("Enter username: ");
+        String username = scanner.nextLine();
+        
+        // Check if username is already taken
+        User current = head;
+             while (current != null) {
+                if (current.username.equals(username)) {
+                    System.out.println("Username already exists. Please choose a different username.");
+                        return;
+                }
+
+                 current = current.next;
+             }
+    
         }
 
     }
