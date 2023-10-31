@@ -1,33 +1,71 @@
 import java.util.HashMap;
 
+class App {
+    public static void main(String[] args) {
+        ResearchCompilation researchCompilation = new ResearchCompilation();
+        researchCompilation.researchCompileInsert();
+        System.out.println(researchCompilation.nodeMap);
+    }
+}
+
+
 // Hashtable -> Node
 // Record of researches
 class ResearchCompilation{  
     HashMap<String, Node> nodeMap = new HashMap<>();
     
-    Node research1 = new Node("")
+    public void researchCompileInsert() {
+        DataSample dataSample = new DataSample();
+        Object[][] researchData = dataSample.getDataSample();
+
+        for (Object[] entry : researchData) {
+            String inputTitle = (String) entry[0];
+            String inputAuthor = (String) entry[1];
+            String inputYearPublished = (String) entry[2];
+            String inputDOI = (String) entry[3];
+            String inputCourse = (String) entry[4];
+            
+            String[] inputGenres;
+            if (entry[5] instanceof String[]) {
+                inputGenres = (String[]) entry[5];
+            } else {
+                // Handle the case where entry[5] is a single string, convert it to an array
+                inputGenres = new String[]{(String) entry[5]};
+            }
+
+            Node researchNode = new Node(inputTitle, inputAuthor, inputYearPublished, inputDOI, inputCourse, inputGenres);
+            nodeMap.put(inputDOI, researchNode);
+        }
+    }
+    
 }
 
-
-
 class Node {
+
     private String researchTitle;
     private String researchAuthor;
-    private int yearPublished;
+    private String yearPublished;
     private String researchDOI;
     private String researchCourse;
-    private String pdfFile;
     private String[] researchGenres;
 
-    public Node(String researchTitle, String researchAuthor, int yearPublished, String researchDOI, String researchCourse, String pdfFile, String[] researchGenres) {
+    public Node(String researchTitle, String researchAuthor, String yearPublished, String researchDOI, String researchCourse, String[] researchGenres) {
         this.researchTitle = researchTitle;
         this.researchAuthor = researchAuthor;
         this.yearPublished = yearPublished;
         this.researchDOI = researchDOI;
         this.researchCourse = researchCourse;
-        this.pdfFile = pdfFile;
+        // this.pdfFile = pdfFile;
         this.researchGenres = researchGenres;
     }
+
+    // public int getId() {
+    //     return id;
+    // }
+
+    // public void setId(int id) {
+    //     this.id = id;
+    // }
 
     public String getResearchTitle() {
         return researchTitle;
@@ -45,11 +83,11 @@ class Node {
         this.researchAuthor = researchAuthor;
     }
 
-    public int getYearPublished() {
+    public String getYearPublished() {
         return yearPublished;
     }
 
-    public void setYearPublished(int yearPublished) {
+    public void setYearPublished(String yearPublished) {
         this.yearPublished = yearPublished;
     }
 
@@ -69,13 +107,13 @@ class Node {
         this.researchCourse = researchCourse;
     }
 
-    public String getPdfFile() {
-        return pdfFile;
-    }
+    // public String getPdfFile() {
+    //     return pdfFile;
+    // }
 
-    public void setPdfFile(String pdfFile) {
-        this.pdfFile = pdfFile;
-    }
+    // public void setPdfFile(String pdfFile) {
+    //     this.pdfFile = pdfFile;
+    // }
 
     public String[] getResearchGenres() {
         return researchGenres;
