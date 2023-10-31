@@ -6,14 +6,14 @@ class App {
         researchCompilation.researchCompileInsert();
         System.out.println(researchCompilation.nodeMap);
 
-        String nodeId = "Daniel Thompson"; // Replace this with the actual node ID you want to retrieve
-        Node node = researchCompilation.nodeMap.get(nodeId);
-        if (node != null) {
-            String researchTitle = node.getResearchTitle();
-            System.out.println("Research Title: " + researchTitle);
-        } else {
-            System.out.println("Node with ID " + nodeId + " not found.");
-        }
+        // String nodeId = "Daniel Thompson"; // Replace this with the actual node ID you want to retrieve
+        // Node node = researchCompilation.nodeMap.get(nodeId);
+        // if (node != null) {
+        //     String researchTitle = node.getResearchTitle();
+        //     System.out.println("Research Title: " + researchTitle);
+        // } else {
+        //     System.out.println("Node with ID " + nodeId + " not found.");
+        // }
     }
 }
 
@@ -22,17 +22,19 @@ class App {
 // Record of researches
 class ResearchCompilation{  
     HashMap<String, Node> nodeMap = new HashMap<>();
-    
+
     public void researchCompileInsert() {
         DataSample dataSample = new DataSample();
         Object[][] researchData = dataSample.getDataSample();
-
+        // System.out.println((String) researchData[1][5]);
+        // System.out.println("--------------------");
         for (Object[] entry : researchData) {
-            String inputTitle = (String) entry[0];
-            String inputAuthor = (String) entry[1];
-            String inputYearPublished = (String) entry[2];
-            String inputDOI = (String) entry[3];
-            String inputCourse = (String) entry[4];
+            String inputTitle = (String) entry[1];
+            String inputAuthor = (String) entry[3];
+            String inputYearPublished = (String) entry[5];
+            String inputDOI = (String) entry[7];
+            String inputCourse = (String) entry[9];
+
             
             String[] inputGenres;
             if (entry[5] instanceof String[]) {
@@ -56,7 +58,7 @@ class Node {
     private String yearPublished;
     private String researchDOI;
     private String researchCourse;
-    private String[] researchGenres;
+    private String[] researchGenres; 
 
     public Node(String researchTitle, String researchAuthor, String yearPublished, String researchDOI, String researchCourse, String[] researchGenres) {
         this.researchTitle = researchTitle;
@@ -131,4 +133,6 @@ class Node {
     public void setResearchGenres(String[] researchGenres) {
         this.researchGenres = researchGenres;
     }
+
+    
 }
