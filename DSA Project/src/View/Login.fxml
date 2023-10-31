@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1440.0" style="-fx-background-color: 959595;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="806.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in to ReHub">
+         <font>
+            <Font name="Arial Bold" size="60.0" />
+         </font>
+      </Text>
+      <Text fill="#57595a" layoutX="808.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unlock the Power of ReHub: Log in for a Seamless Experience">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#406bde" layoutX="808.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email or Username">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Text>
+      <TextField layoutX="808.0" layoutY="416.0" prefHeight="71.0" prefWidth="544.0" promptText="Enter Email or Username" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 10; -fx-border-width: 0.5;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <Text fill="#406bde" layoutX="808.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Text>
+      <TextField layoutX="808.0" layoutY="573.0" prefHeight="71.0" prefWidth="544.0" promptText="Enter Password" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 10; -fx-border-width: 0.5;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#406bde" height="71.0" layoutX="806.0" layoutY="696.0" stroke="#406bde" strokeType="INSIDE" width="544.0" />
+      <Text fill="WHITE" layoutX="1031.0" layoutY="745.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in ">
+         <font>
+            <Font name="Arial Bold" size="35.0" />
+         </font>
+      </Text>
+      <Text fill="#57595a" layoutX="923.0" layoutY="792.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do not have an account?">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#406bde" layoutX="1149.0" layoutY="792.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
