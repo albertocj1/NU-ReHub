@@ -5,6 +5,15 @@ class App {
         ResearchCompilation researchCompilation = new ResearchCompilation();
         researchCompilation.researchCompileInsert();
         System.out.println(researchCompilation.nodeMap);
+
+        String nodeId = "Daniel Thompson"; // Replace this with the actual node ID you want to retrieve
+        Node node = researchCompilation.nodeMap.get(nodeId);
+        if (node != null) {
+            String researchTitle = node.getResearchTitle();
+            System.out.println("Research Title: " + researchTitle);
+        } else {
+            System.out.println("Node with ID " + nodeId + " not found.");
+        }
     }
 }
 
