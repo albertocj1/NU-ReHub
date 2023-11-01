@@ -12,13 +12,13 @@ class App {
         String nodeId = "10.5678/ijkl9012"; // Replace this with the actual node ID you want to retrieve
         Node node = v1App.nodeMap.get(nodeId);
         if (node != null) {
-            String researchTitle = node.getResearchGenresString();
+            String researchTitle = node.getResearchTitle();
             System.out.println("Research Title: " + researchTitle);
         } else {
             System.out.println("Node with ID " + nodeId + " not found.");
         }
 
-        v1App.addNode("try", "try", "try", "try", "try", new String[]{"try", "try", "try"});
+        v1App.addNode("Enhancing Mobile Web Application using ML", "De Luna, M.", "2023", "10.5678/ijkl90123", "BSCS-ML", "Internship",new String[]{"Machine Learning", "CyberSecurity"});
         System.out.println(v1App.nodeMap);
     }
 
@@ -32,23 +32,24 @@ class App {
             String inputYearPublished = (String) entry[5];
             String inputDOI = (String) entry[7];
             String inputCourse = (String) entry[9];
+            String inputTypeDoc = (String) entry[11];
 
             
             String[] inputGenres;
-            if (entry[11] instanceof String[]) {
-                inputGenres = (String[]) entry[11];
+            if (entry[13] instanceof String[]) {
+                inputGenres = (String[]) entry[13];
             } else {
                 // Handle the case where entry[5] is a single string, convert it to an array
                 inputGenres = new String[]{(String) entry[11]};
             }
 
-            Node researchNode = new Node(inputTitle, inputAuthor, inputYearPublished, inputDOI, inputCourse, inputGenres);
+            Node researchNode = new Node(inputTitle, inputAuthor, inputYearPublished, inputDOI, inputCourse, inputTypeDoc, inputGenres);
             nodeMap.put(inputDOI, researchNode);
         }
     }
 
-    public void addNode(String inputTitle, String inputAuthor, String inputYearPublished, String inputDOI, String inputCourse, String[] inputGenres) {
-        Node researchNode = new Node(inputTitle, inputAuthor, inputYearPublished, inputDOI, inputCourse, inputGenres);
+    public void addNode(String inputTitle, String inputAuthor, String inputYearPublished, String inputDOI, String inputCourse, String inputTypeDoc, String[] inputGenres) {
+        Node researchNode = new Node(inputTitle, inputAuthor, inputYearPublished, inputDOI, inputCourse, inputTypeDoc,inputGenres);
         nodeMap.put(inputDOI, researchNode);
     }
 
@@ -74,6 +75,10 @@ class App {
 
     public void updateCourse(Node node, String newCourse) {
         node.setResearchCourse(newCourse);
+    }
+
+    public void updateTypeDoc(Node node, String newTypeDoc) {
+        node.setTypeDoc(newTypeDoc);
     }
 
     public void updateGenres(Node node, String[] newGenres) {

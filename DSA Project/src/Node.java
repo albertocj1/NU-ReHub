@@ -10,14 +10,16 @@ class Node {
     private String yearPublished;
     private String researchDOI;
     private String researchCourse;
+    private String typeDoc;
     private String[] researchGenres; 
 
-    public Node(String researchTitle, String researchAuthor, String yearPublished, String researchDOI, String researchCourse, String[] researchGenres) {
+    public Node(String researchTitle, String researchAuthor, String yearPublished, String researchDOI, String researchCourse, String typeDoc, String[] researchGenres) {
         this.researchTitle = researchTitle;
         this.researchAuthor = researchAuthor;
         this.yearPublished = yearPublished;
         this.researchDOI = researchDOI;
         this.researchCourse = researchCourse;
+        this.typeDoc = typeDoc;
         // this.pdfFile = pdfFile;
         this.researchGenres = researchGenres;
     }
@@ -69,6 +71,14 @@ class Node {
 
     public void setResearchCourse(String researchCourse) {
         this.researchCourse = researchCourse;
+    }
+
+    public String getTypeDoc() {
+        return typeDoc;
+    }
+
+    public void setTypeDoc(String typeDoc) {
+        this.typeDoc = typeDoc;
     }
 
     // public String getPdfFile() {
