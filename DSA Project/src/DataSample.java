@@ -6,7 +6,7 @@ public class DataSample {
             "researchAuthor", "John Smith",
             "yearPublished", "2020",
             "researchDOI", "10.5678/abcd1234",
-            "researchCourse", "Data Science",
+            "researchCourse", "BSCS-ML",
             "researchGenres", new String[]{"Predictive Analytics", "E-Commerce", "Machine Learning"}
         },
         {
