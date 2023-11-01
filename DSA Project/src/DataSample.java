@@ -3,7 +3,7 @@ public class DataSample {
     public Object[][] dataSample = new Object[][] {
         {
             "researchTitle", "A Comparative Study of Machine Learning Algorithms for Predictive Analytics in E-Commerce",
-            "researchAuthor", "John Smith",
+            "researchAuthor", "Maria Santos",
             "yearPublished", "2020",
             "researchDOI", "10.5678/abcd1234",
             "researchCourse", "BSCS-ML",
@@ -11,7 +11,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Scalability and Performance Optimization in Modern Web Applications",
-            "researchAuthor", "Michael Anderson",
+            "researchAuthor", "Juan Cruz",
             "yearPublished", "2018",
             "researchDOI", "10.5678/efgh5678",
             "researchCourse", "BSIT-MWA",
@@ -19,7 +19,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Mitigating Cybersecurity Threats in Internet of Things (IoT) Devices",
-            "researchAuthor", "Sarah Martinez",
+            "researchAuthor", "Luz Reyes",
             "yearPublished", "2017",
             "researchDOI", "10.5678/ijkl9012",
             "researchCourse", "BSCS-DF",
@@ -27,7 +27,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Advancements in Natural Language Processing using Deep Learning Techniques",
-            "researchAuthor", "David Kim",
+            "researchAuthor", "Antonio Garcia",
             "yearPublished", "2019",
             "researchDOI", "10.5678/mnop3456",
             "researchCourse", "BSCS-ML",
@@ -35,7 +35,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Exploring Generative Adversarial Networks (GANs) for Image Synthesis",
-            "researchAuthor", "Jessica Lee",
+            "researchAuthor", "Rosario Villanuava",
             "yearPublished", "2016",
             "researchDOI", "10.5678/qrst5678",
             "researchCourse", "BSCS-ML",
@@ -43,7 +43,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Ethical Considerations in AI: Ensuring Fairness and Accountability in Autonomous Systems",
-            "researchAuthor", "Daniel Thompson",
+            "researchAuthor", "Eduardo Ramos",
             "yearPublished", "2021",
             "researchDOI", "10.5678/uvwx1234",
             "researchCourse", "BSCS-ML",
@@ -51,7 +51,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Enhancing Mobile App Security with Machine Learning",
-            "researchAuthor", "Emily Davis",
+            "researchAuthor", "Consuelo Hernandez",
             "yearPublished", "2022",
             "researchDOI", "10.5678/ab123cd",
             "researchCourse", "BSIT-MWA",
@@ -59,7 +59,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Predictive Analytics in Game Development",
-            "researchAuthor", "Matthew Wilson",
+            "researchAuthor", "Alejandro Cruzado",
             "yearPublished", "2019",
             "researchDOI", "10.5678/ef123gh",
             "researchCourse", "BSIT-MAA",
@@ -67,7 +67,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Digital Forensics and Cyber Threat Detection",
-            "researchAuthor", "Olivia Brown",
+            "researchAuthor", "Carmen Torres",
             "yearPublished", "2018",
             "researchDOI", "10.5678/ij123kl",
             "researchCourse", "BSCS-DF",
@@ -75,7 +75,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Natural Language Processing for Sentiment Analysis",
-            "researchAuthor", "Ethan Miller",
+            "researchAuthor", "Rodrigo Fernandez",
             "yearPublished", "2020",
             "researchDOI", "10.5678/mn123op",
             "researchCourse", "BSCS-ML",
@@ -83,7 +83,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Machine Learning in Healthcare Data Analysis",
-            "researchAuthor", "Sophia White",
+            "researchAuthor", "Amy Rodriguez",
             "yearPublished", "2021",
             "researchDOI", "10.5678/qr123st",
             "researchCourse", "BSCS-ML",
@@ -91,7 +91,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Visual Effects and Animation Techniques in Game Development",
-            "researchAuthor", "Nathan Robinson",
+            "researchAuthor", "Jose Mendoza",
             "yearPublished", "2017",
             "researchDOI", "10.5678/uv123wx",
             "researchCourse", "BSIT-MAA",
@@ -99,7 +99,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Securing IoT Devices in Data Forensics",
-            "researchAuthor", "Ava Garcia",
+            "researchAuthor", "Aurora Dela Cruz",
             "yearPublished", "2018",
             "researchDOI", "10.5678/yz123ab",
             "researchCourse", "BSCS-DF",
@@ -107,7 +107,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Machine Learning for Financial Data Analysis",
-            "researchAuthor", "Lucas Smith",
+            "researchAuthor", "Manuel Gonzales",
             "yearPublished", "2019",
             "researchDOI", "10.5678/bc234de",
             "researchCourse", "BSCS-ML",
@@ -115,7 +115,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Responsive Web Design and Mobile App Development",
-            "researchAuthor", "Lily Wilson",
+            "researchAuthor", "Luningning Abella",
             "yearPublished", "2022",
             "researchDOI", "10.5678/ef234gh",
             "researchCourse", "BSIT-MWA",
@@ -123,7 +123,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Game Engine Development for Virtual Reality Experiences",
-            "researchAuthor", "Jacob Davis",
+            "researchAuthor", "Isidro Espinoza",
             "yearPublished", "2016",
             "researchDOI", "10.5678/ij234kl",
             "researchCourse", "BSIT-MAA",
@@ -131,7 +131,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Data Privacy and Security in Machine Learning",
-            "researchAuthor", "Sophie Johnson",
+            "researchAuthor", "Milagros Ramos",
             "yearPublished", "2023",
             "researchDOI", "10.5678/cd345ef",
             "researchCourse", "BSCS-ML",
@@ -139,7 +139,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Big Data Analysis for E-Commerce Optimization",
-            "researchAuthor", "Alex Turner",
+            "researchAuthor", "Guillermo Lim",
             "yearPublished", "2022",
             "researchDOI", "10.5678/gh456ij",
             "researchCourse", "BSCS-ML",
@@ -147,7 +147,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Mobile App Development for Game-Based Learning",
-            "researchAuthor", "Emma Garcia",
+            "researchAuthor", "Teresa Sison",
             "yearPublished", "2018",
             "researchDOI", "10.5678/kl567mn",
             "researchCourse", "BSIT-MAA",
@@ -155,7 +155,7 @@ public class DataSample {
         },
         {
             "researchTitle", "Forensic Analysis of Cyber Attacks in IoT Networks",
-            "researchAuthor", "Noah Miller",
+            "researchAuthor", "Reynaldo Caballero",
             "yearPublished", "2019",
             "researchDOI", "10.5678/op678qr",
             "researchCourse", "BSCS-DF",
