@@ -7,20 +7,19 @@ class App {
     public static void main(String[] args) {
         App v1App = new App();
         v1App.researchCompileInsert();
-
-        // Print the node map
         System.out.println(v1App.nodeMap);
 
         String nodeId = "10.5678/ijkl9012"; // Replace this with the actual node ID you want to retrieve
         Node node = v1App.nodeMap.get(nodeId);
         if (node != null) {
-            String researchTitle = node.getResearchTitle();
+            String researchTitle = node.getResearchGenresString();
             System.out.println("Research Title: " + researchTitle);
-            node.setResearchTitle("New Title");
-            System.out.println("new: " + node.getResearchTitle());
         } else {
             System.out.println("Node with ID " + nodeId + " not found.");
         }
+
+        v1App.addNode("try", "try", "try", "try", "try", new String[]{"try", "try", "try"});
+        System.out.println(v1App.nodeMap);
     }
 
     public void researchCompileInsert() {
@@ -48,12 +47,12 @@ class App {
         }
     }
 
-    public void add(Node node, String inputTitle, String inputAuthor, String inputYearPublished, String inputDOI, String inputCourse, String[] inputGenres) {
+    public void addNode(String inputTitle, String inputAuthor, String inputYearPublished, String inputDOI, String inputCourse, String[] inputGenres) {
         Node researchNode = new Node(inputTitle, inputAuthor, inputYearPublished, inputDOI, inputCourse, inputGenres);
         nodeMap.put(inputDOI, researchNode);
     }
 
-    public void delete(Node node) {
+    public void deleteNode(Node node) {
         nodeMap.remove(node.getResearchDOI());
     }
 
@@ -67,7 +66,6 @@ class App {
 
     public void updateYearPublished(Node node, String newYearPublished) {
         node.setYearPublished(newYearPublished);
-
     }
 
     public void updateDOI(Node node, String newDOI) {
