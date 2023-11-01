@@ -38,7 +38,27 @@ class App {
         nodeMap.remove(node.getResearchDOI());
     }
 
-    public void update(Node node) {
+    public void updateTitle(Node node, String newTitle) {
+        node.setResearchTitle(newTitle);
+    }
+
+    public void updateAuthor(Node node) {
+        // node.set
+    }
+
+    public void updateYearPublished(Node node) {
+
+    }
+
+    public void updateDOI(Node node) {
+
+    }
+
+    public void updateCourse(Node node) {
+
+    }
+
+    public void updateGenres(Node node) {
 
     }
 
