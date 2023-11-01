@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Scanner;
+
 public class Register {
     public HashMap <String, String> users;
 
@@ -28,11 +29,9 @@ public class Register {
         }
         return false; 
     }
-    public static void main(String[] args) {
+    public static void RegistrationSystem() {
         Register registrationSystem = new Register();
         Scanner scanner = new Scanner(System.in);
-
-        // Register new users
         registrationSystem.registerUser(scanner);
 
         boolean loggedIn = false;
@@ -53,6 +52,10 @@ public class Register {
         }
     }
 
-        scanner.close(); // Don't forget to close the scanner
+        scanner.close();
+    }
+
+    public static void main(String[] args) {
+        RegistrationSystem();
     }
 }
