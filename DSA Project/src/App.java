@@ -67,10 +67,10 @@ class App {
         v1App.researchCompileInsert();
         System.out.println(v1App.nodeMap);
 
-        String nodeId = "10.5678/ijkl9012"; // Replace this with the actual node ID you want to retrieve
+        String nodeId = "10.5678/ij234kl"; // Replace this with the actual node ID you want to retrieve
         Node node = v1App.nodeMap.get(nodeId);
         if (node != null) {
-            String researchTitle = node.getResearchGenresString();
+            String researchTitle = node.getResearchTitle();
             System.out.println("Research Title: " + researchTitle);
         } else {
             System.out.println("Node with ID " + nodeId + " not found.");
