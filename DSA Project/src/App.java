@@ -4,6 +4,25 @@ class App {
 
     HashMap<String, Node> nodeMap = new HashMap<>();
 
+    public static void main(String[] args) {
+        App v1App = new App();
+        v1App.researchCompileInsert();
+
+        // Print the node map
+        System.out.println(v1App.nodeMap);
+
+        String nodeId = "10.5678/ijkl9012"; // Replace this with the actual node ID you want to retrieve
+        Node node = v1App.nodeMap.get(nodeId);
+        if (node != null) {
+            String researchTitle = node.getResearchTitle();
+            System.out.println("Research Title: " + researchTitle);
+            node.setResearchTitle("New Title");
+            System.out.println("new: " + node.getResearchTitle());
+        } else {
+            System.out.println("Node with ID " + nodeId + " not found.");
+        }
+    }
+
     public void researchCompileInsert() {
         DataSample dataSample = new DataSample();
         Object[][] researchData = dataSample.getDataSample();
@@ -42,40 +61,28 @@ class App {
         node.setResearchTitle(newTitle);
     }
 
-    public void updateAuthor(Node node) {
-        // node.set
+    public void updateAuthor(Node node, String newAuthor) {
+        node.setResearchAuthor(newAuthor);
     }
 
-    public void updateYearPublished(Node node) {
-
-    }
-
-    public void updateDOI(Node node) {
+    public void updateYearPublished(Node node, String newYearPublished) {
+        node.setYearPublished(newYearPublished);
 
     }
 
-    public void updateCourse(Node node) {
-
+    public void updateDOI(Node node, String newDOI) {
+        node.setResearchDOI(newDOI);
     }
 
-    public void updateGenres(Node node) {
-
+    public void updateCourse(Node node, String newCourse) {
+        node.setResearchCourse(newCourse);
     }
 
-    public static void main(String[] args) {
-        App v1App = new App();
-        v1App.researchCompileInsert();
-        System.out.println(v1App.nodeMap);
-
-        String nodeId = "10.5678/ijkl9012"; // Replace this with the actual node ID you want to retrieve
-        Node node = v1App.nodeMap.get(nodeId);
-        if (node != null) {
-            String researchTitle = node.getResearchGenresString();
-            System.out.println("Research Title: " + researchTitle);
-        } else {
-            System.out.println("Node with ID " + nodeId + " not found.");
-        }
+    public void updateGenres(Node node, String[] newGenres) {
+        node.setResearchGenres(newGenres);
     }
+
+    
 }
 
 
