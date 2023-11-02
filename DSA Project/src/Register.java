@@ -9,17 +9,43 @@ public class Register {
     }
 
     public void registerUser(Scanner scanner) {
-        System.out.print("Enter username: ");
-        String username = scanner.nextLine();
+        String username = "";
+        String password = "";
     
-        if (!users.containsKey(username)) {
-            System.out.print("Enter password: ");
-            String password = scanner.nextLine();
+        while (username.isEmpty() || password.isEmpty()) {
+            System.out.print("Enter username: ");
+            username = scanner.nextLine();
     
-            users.put(username, password);
-            System.out.println("User registered successfully!");
+            if (username.isEmpty()) {
+                System.out.println("Username cannot be empty. Please try again.");
+            } else if (users.containsKey(username)) {
+                System.out.println("Username already exists. Please choose another username.");
+                return;
+            } else {
+                System.out.print("Enter password: ");
+                password = scanner.nextLine();
+    
+                if (password.isEmpty()) {
+                    System.out.println("Password cannot be empty. Please try again.");
+                } else if (password.length() < 6) {
+                    System.out.println("Password must be at least 6 characters long. Please try again.");
+                }
+            }
+        }
+    
+        users.put(username, password);
+        System.out.println("User registered successfully!");
+    }
+
+    public void showUsers() {
+        if (users.isEmpty()) {
+            System.out.println("No users registered yet.");
         } else {
-            System.out.println("Username already exists. Please choose another username.");
+            System.out.println("Registered Users:");
+            for (String username : users.keySet()) {
+                String password = users.get(username);
+                System.out.println("Username: " + username + ", Password: " + password);
+            }
         }
     }
 
@@ -29,28 +55,53 @@ public class Register {
         }
         return false; 
     }
+    
     public static void RegistrationSystem() {
         Register registrationSystem = new Register();
         Scanner scanner = new Scanner(System.in);
-        registrationSystem.registerUser(scanner);
+
+        
 
         boolean loggedIn = false;
 
 
-    while(!loggedIn){
-        System.out.print("Enter username: ");
-        String username = scanner.nextLine();
-        System.out.print("Enter password: ");
-        String password = scanner.nextLine();
+        while (!loggedIn) {
+            System.out.println("1. Register");
+            System.out.println("2. Log In");
+            System.out.println("3. Exit");
+            System.out.print("Select an option: ");
+            int choice = Integer.parseInt(scanner.nextLine());
 
-        if (registrationSystem.validateUser(username, password)) {
-            System.out.println("Login successful!");
-            loggedIn = true;
-        } else {
-            System.out.println("Invalid credentials!");
+            switch (choice) {
+                case 1:
+                    registrationSystem.registerUser(scanner);
+                    break;
 
+                case 2:
+                    System.out.print("Enter username: ");
+                    String email = scanner.nextLine();
+                    System.out.print("Enter password: ");
+                    String password = scanner.nextLine();
+
+                    if (registrationSystem.validateUser(email, password)) {
+                        System.out.println("Login successful!");
+                        loggedIn = true;
+                        registrationSystem.showUsers();
+                    } else {
+                        System.out.println("Invalid credentials. Please try again.");
+                    }
+                    break;
+
+                case 3:
+                    System.out.println("Exiting...");
+                    System.exit(0);
+                    break;
+
+                default:
+                    System.out.println("Invalid option. Please try again.");
+                    break;
+            }
         }
-    }
 
         scanner.close();
     }
