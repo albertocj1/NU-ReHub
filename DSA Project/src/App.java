@@ -1,25 +1,49 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 
 class App {
 
     HashMap<String, Node> nodeMap = new HashMap<>();
+    HashMap<String, Node> copyNodeMap = new HashMap<>();
+    static String[] filteredList;
+
 
     public static void main(String[] args) {
         App v1App = new App();
         v1App.researchCompileInsert();
-        System.out.println(v1App.nodeMap);
+        // System.out.println(v1App.nodeMap);
 
-        String nodeId = "10.5678/ijkl9012"; // Replace this with the actual node ID you want to retrieve
-        Node node = v1App.nodeMap.get(nodeId);
-        if (node != null) {
-            String researchTitle = node.getResearchAuthor();
-            System.out.println("Research Title: " + researchTitle);
-        } else {
-            System.out.println("Node with ID " + nodeId + " not found.");
-        }
+        // String nodeId = "10.5678/ijkl9012"; // Replace this with the actual node ID you want to retrieve
+        // Node node = v1App.nodeMap.get(nodeId);
+        // if (node != null) {
+        //     String researchTitle = node.getResearchAuthor();
+        //     System.out.println("Research Title: " + researchTitle);
+        // } else {
+        //     System.out.println("Node with ID " + nodeId + " not found.");
+        // }
 
-        v1App.addNode("Enhancing Mobile Web Application using ML", "De Luna, M.", "2023", "10.5678/ijkl90123", "BSCS-ML", "Internship",new String[]{"Machine Learning", "CyberSecurity"});
-        System.out.println(v1App.nodeMap);
+        // v1App.addNode("Enhancing Mobile Web Application using ML", "De Luna, M.", "2023", "10.5678/ijkl90123", "BSCS-ML", "Internship",new String[]{"Machine Learning", "CyberSecurity"});
+        // System.out.println(v1App.nodeMap);
+        // System.out.println();
+        // System.out.println(v1App.nodeMap.keySet());
+        // String[] listFiltered = v1App.filterYears("2022");
+        // System.out.println(Arrays.toString(listFiltered));
+
+        // Filter by course
+        v1App.resetCloneMap();
+        String[] filteredByCourse = v1App.filterCourses("BSCS-ML");
+        System.out.println("Filtered by Course (BSCS-ML): " + Arrays.toString(filteredByCourse));
+
+        // Filter by year
+        String[] filteredByYear = v1App.filterYears("2019");
+        System.out.println("Filtered by Year (2019): " + Arrays.toString(filteredByYear));
+
+        // Filter by type
+        String[] filteredByType = v1App.filterTypes("Internship");
+        System.out.println("Filtered by Type (Thesis): " + Arrays.toString(filteredByType));
     }
 
     public void researchCompileInsert() {
@@ -140,6 +164,72 @@ class App {
             node.setResearchGenres(newGenres);
         }
     }
+
+    public String[] filterCourses(String course) {
+        List<String> filteredNodes = new ArrayList<>(Arrays.asList(filteredList));
+    
+        Iterator<String> iterator = filteredNodes.iterator();
+        while (iterator.hasNext()) {
+            String node = iterator.next();
+            Node researchNode = this.nodeMap.get(node);
+            String rCourse = researchNode.getResearchCourse().toLowerCase();
+            if (!rCourse.equals(course.toLowerCase())) {
+                iterator.remove(); // Use iterator to safely remove elements from the list
+            }
+        }
+    
+        // Convert the filteredNodes list to a String array
+        filteredList = convertListToArray(filteredNodes);
+        return filteredList;
+    }
+    
+    public String[] filterTypes(String type) {
+        List<String> filteredNodes = new ArrayList<>(Arrays.asList(filteredList));
+    
+        Iterator<String> iterator = filteredNodes.iterator();
+        while (iterator.hasNext()) {
+            String node = iterator.next();
+            Node researchNode = this.nodeMap.get(node);
+            String typeDoc = researchNode.getTypeDoc().toLowerCase();
+            if (!typeDoc.equals(type.toLowerCase())) {
+                iterator.remove(); // Use iterator to safely remove elements from the list
+            }
+        }
+    
+        // Convert the filteredNodes list to a String array
+        filteredList = convertListToArray(filteredNodes);
+        return filteredList;
+    }
+
+    public String[] filterYears(String year) {
+        List<String> filteredNodes = new ArrayList<>(Arrays.asList(filteredList));
+    
+        Iterator<String> iterator = filteredNodes.iterator();
+        while (iterator.hasNext()) {
+            String node = iterator.next();
+            Node researchNode = this.nodeMap.get(node);
+            String rYear = researchNode.getYearPublished().toLowerCase();
+            if (!rYear.equals(year.toLowerCase())) {
+                iterator.remove(); // Use iterator to safely remove elements from the list
+            }
+        }
+    
+        // Convert the filteredNodes list to a String array
+        filteredList = convertListToArray(filteredNodes);
+        return filteredList;
+    }
+    
+    private static String[] convertListToArray(List<String> list) {
+        String[] array = new String[list.size()];
+        return list.toArray(array);
+    }
+
+    public void resetCloneMap() {
+        this.copyNodeMap = new HashMap<>(this.nodeMap);
+        List<String> researchNodes = new ArrayList<>(this.copyNodeMap.keySet());
+        filteredList = convertListToArray(researchNodes);
+    }
+
 }
 
 
