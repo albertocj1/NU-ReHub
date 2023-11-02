@@ -34,18 +34,18 @@ class App {
 
         // Filter by course
         v1App.resetCloneMap();
-        String[] filteredbyWord = v1App.searchKeyword("Machine");
-        System.out.println(Arrays.toString(filteredbyWord));
-        // String[] filteredByCourse = v1App.filterCourses("BSCS-ML");
-        // System.out.println("Filtered by Course (BSCS-ML): " + Arrays.toString(filteredByCourse));
+        // String[] filteredbyWord = v1App.searchKeyword("Pogi");
+        // System.out.println(Arrays.toString(filteredbyWord));
+        String[] filteredByCourse = v1App.filterCourses("BSCS-ML");
+        System.out.println("Filtered by Course (BSCS-ML): " + Arrays.toString(filteredByCourse));
 
-        // // Filter by year
-        // String[] filteredByYear = v1App.filterYears("2019");
-        // System.out.println("Filtered by Year (2019): " + Arrays.toString(filteredByYear));
+        // Filter by year
+        String[] filteredByYear = v1App.filterYears("2019");
+        System.out.println("Filtered by Year (2019): " + Arrays.toString(filteredByYear));
 
-        // // Filter by type
-        // String[] filteredByType = v1App.filterTypes("Internship");
-        // System.out.println("Filtered by Type (Thesis): " + Arrays.toString(filteredByType));
+        // Filter by type
+        String[] filteredByType = v1App.filterTypes("Thesis");
+        System.out.println("Filtered by Type (Thesis): " + Arrays.toString(filteredByType));
     }
 
     public void researchCompileInsert() {
