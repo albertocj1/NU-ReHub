@@ -12,7 +12,7 @@ class App {
         String nodeId = "10.5678/ijkl9012"; // Replace this with the actual node ID you want to retrieve
         Node node = v1App.nodeMap.get(nodeId);
         if (node != null) {
-            String researchTitle = node.getResearchTitle();
+            String researchTitle = node.getResearchAuthor();
             System.out.println("Research Title: " + researchTitle);
         } else {
             System.out.println("Node with ID " + nodeId + " not found.");
@@ -49,8 +49,22 @@ class App {
     }
 
     public void addNode(String inputTitle, String inputAuthor, String inputYearPublished, String inputDOI, String inputCourse, String inputTypeDoc, String[] inputGenres) {
-        Node researchNode = new Node(inputTitle, inputAuthor, inputYearPublished, inputDOI, inputCourse, inputTypeDoc,inputGenres);
-        nodeMap.put(inputDOI, researchNode);
+        Boolean validationGoods = true;
+        Boolean[] validation = {ValidationNode.checkResearch(inputTitle), ValidationNode.checkAuthor(inputAuthor), ValidationNode.checkYear(inputYearPublished), ValidationNode.checkDOI(inputDOI), ValidationNode.checkCourse(inputCourse), ValidationNode.checkTypeDoc(inputTypeDoc), ValidationNode.checkGenres(inputGenres)};
+        
+        for (Boolean validations : validation) {
+            if (validations == false) {
+                validationGoods = false;
+                break;
+            } 
+        }
+
+        if (validationGoods == true) {
+            Node researchNode = new Node(inputTitle, inputAuthor, inputYearPublished, inputDOI, inputCourse, inputTypeDoc, inputGenres);
+            nodeMap.put(inputDOI, researchNode);
+        } else {
+            System.out.println("id input. Please try again.");
+        }
     }
 
     public void deleteNode(Node node) {
@@ -58,34 +72,74 @@ class App {
     }
 
     public void updateTitle(Node node, String newTitle) {
-        node.setResearchTitle(newTitle);
+        if (ValidationNode.checkResearch(newTitle) == false) {
+            System.out.println("Invalid input. Please try again.");
+            return;
+        } else {
+            System.out.println("Successfully updated title.");
+            node.setResearchTitle(newTitle);
+        }
     }
 
     public void updateAuthor(Node node, String newAuthor) {
-        node.setResearchAuthor(newAuthor);
+        if (ValidationNode.checkAuthor(newAuthor) == false) {
+            System.out.println("Invalid input. Please try again.");
+            return;
+        } else {
+            System.out.println("Successfully updated author.");
+            node.setResearchAuthor(newAuthor);
+        }
     }
 
     public void updateYearPublished(Node node, String newYearPublished) {
-        node.setYearPublished(newYearPublished);
+        if (ValidationNode.checkYear(newYearPublished) == false) {
+            System.out.println("Invalid input. Please try again.");
+            return;
+        } else {
+            System.out.println("Successfully updated year published.");
+            node.setYearPublished(newYearPublished);
+        }
     }
 
     public void updateDOI(Node node, String newDOI) {
-        node.setResearchDOI(newDOI);
+        if (ValidationNode.checkDOI(newDOI) == false) {
+            System.out.println("Invalid input. Please try again.");
+            return;
+        } else {
+            System.out.println("Successfully updated DOI.");
+            node.setResearchDOI(newDOI);
+        }
     }
 
     public void updateCourse(Node node, String newCourse) {
-        node.setResearchCourse(newCourse);
+        if (ValidationNode.checkCourse(newCourse) == false) {
+            System.out.println("Invalid input. Please try again.");
+            return;
+        } else {
+            System.out.println("Successfully updated course.");
+            node.setResearchCourse(newCourse);
+        }
     }
 
     public void updateTypeDoc(Node node, String newTypeDoc) {
-        node.setTypeDoc(newTypeDoc);
+        if (ValidationNode.checkTypeDoc(newTypeDoc) == false) {
+            System.out.println("Invalid input. Please try again.");
+            return;
+        } else {
+            System.out.println("Successfully updated document type.");
+            node.setTypeDoc(newTypeDoc);
+        }
     }
 
     public void updateGenres(Node node, String[] newGenres) {
-        node.setResearchGenres(newGenres);
+        if (ValidationNode.checkGenres(newGenres) == false) {
+            System.out.println("Invalid input. Please try again.");
+            return;
+        } else {
+            System.out.println("Successfully updated genres.");
+            node.setResearchGenres(newGenres);
+        }
     }
-
-    
 }
 
 

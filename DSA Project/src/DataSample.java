@@ -7,6 +7,7 @@ public class DataSample {
             "yearPublished", "2020",
             "researchDOI", "10.5678/abcd1234",
             "researchCourse", "BSCS-ML",
+            "reserachDoctype", "Thesis",
             "researchGenres", new String[]{"Machine Learning"}
         },
         {
@@ -15,6 +16,7 @@ public class DataSample {
             "yearPublished", "2018",
             "researchDOI", "10.5678/efgh5678",
             "researchCourse", "BSIT-MWA",
+            "researchDoctype", "Capstone",
             "researchGenres", new String[]{"Web Development"}
         },
         {
@@ -23,6 +25,7 @@ public class DataSample {
             "yearPublished", "2017",
             "researchDOI", "10.5678/ijkl9012",
             "researchCourse", "BSCS-DF",
+            "researchDoctype", "Internship",
             "researchGenres", new String[]{"Cybersecurity"}
         },
         {
@@ -31,6 +34,7 @@ public class DataSample {
             "yearPublished", "2019",
             "researchDOI", "10.5678/mnop3456",
             "researchCourse", "BSCS-ML",
+            "researchDoctype", "Internship",
             "researchGenres", new String[]{"Machine Learning"}
         },
         {
@@ -39,6 +43,7 @@ public class DataSample {
             "yearPublished", "2016",
             "researchDOI", "10.5678/qrst5678",
             "researchCourse", "BSCS-ML",
+            "researchDoctype", "Capstone",
             "researchGenres", new String[]{"Machine Learning"}
         },
         {
@@ -47,6 +52,7 @@ public class DataSample {
             "yearPublished", "2021",
             "researchDOI", "10.5678/uvwx1234",
             "researchCourse", "BSCS-ML",
+            "researchDoctype", "Internship",
             "researchGenres", new String[]{"Machine Learning"}
         },
         {
@@ -55,6 +61,7 @@ public class DataSample {
             "yearPublished", "2022",
             "researchDOI", "10.5678/ab123cd",
             "researchCourse", "BSIT-MWA",
+            "researchDoctype", "Capstone",
             "researchGenres", new String[]{"Cybersecurity"}
         },
         {
@@ -63,6 +70,7 @@ public class DataSample {
             "yearPublished", "2019",
             "researchDOI", "10.5678/ef123gh",
             "researchCourse", "BSIT-MAA",
+            "researchDoctype", "Capstone",
             "researchGenres", new String[]{"Game Development", "Machine Learning"}
         },
         {
@@ -71,6 +79,7 @@ public class DataSample {
             "yearPublished", "2018",
             "researchDOI", "10.5678/ij123kl",
             "researchCourse", "BSCS-DF",
+            "researchDoctype", "Capstone",
             "researchGenres", new String[]{"Cybersecurity"}
         },
         {
@@ -79,6 +88,7 @@ public class DataSample {
             "yearPublished", "2020",
             "researchDOI", "10.5678/mn123op",
             "researchCourse", "BSCS-ML",
+            "researchDoctype", "Internship",
             "researchGenres", new String[]{"Machine Learning"}
         },
         {
@@ -87,6 +97,7 @@ public class DataSample {
             "yearPublished", "2021",
             "researchDOI", "10.5678/qr123st",
             "researchCourse", "BSCS-ML",
+            "researchDoctype", "Internship",
             "researchGenres", new String[]{"Data Science", "Machine Learning"}
         },
         {
@@ -95,6 +106,7 @@ public class DataSample {
             "yearPublished", "2017",
             "researchDOI", "10.5678/uv123wx",
             "researchCourse", "BSIT-MAA",
+            "researchDoctype", "Capstone",
             "researchGenres", new String[]{"Game Development"}
         },
         {
@@ -103,6 +115,7 @@ public class DataSample {
             "yearPublished", "2018",
             "researchDOI", "10.5678/yz123ab",
             "researchCourse", "BSCS-DF",
+            "researchDoctype", "Internship",
             "researchGenres", new String[]{"Cybersecurity"}
         },
         {
@@ -111,6 +124,7 @@ public class DataSample {
             "yearPublished", "2019",
             "researchDOI", "10.5678/bc234de",
             "researchCourse", "BSCS-ML",
+            "researchDoctype", "Internship",
             "researchGenres", new String[]{"Data Science", "Machine Learning"}
         },
         {
@@ -119,6 +133,7 @@ public class DataSample {
             "yearPublished", "2022",
             "researchDOI", "10.5678/ef234gh",
             "researchCourse", "BSIT-MWA",
+            "researchDoctype", "Capstone",
             "researchGenres", new String[]{"Web Development"}
         },
         {
@@ -127,6 +142,7 @@ public class DataSample {
             "yearPublished", "2016",
             "researchDOI", "10.5678/ij234kl",
             "researchCourse", "BSIT-MAA",
+            "researchDoctype", "Capstone",
             "researchGenres", new String[]{"Game Development"}
         },
         {
@@ -135,6 +151,7 @@ public class DataSample {
             "yearPublished", "2023",
             "researchDOI", "10.5678/cd345ef",
             "researchCourse", "BSCS-ML",
+            "researchDoctype", "Internship",
             "researchGenres", new String[]{"Cybersecurity", "Machine Learning"}
         },
         {
@@ -143,6 +160,7 @@ public class DataSample {
             "yearPublished", "2022",
             "researchDOI", "10.5678/gh456ij",
             "researchCourse", "BSCS-ML",
+            "researchDoctype", "Internship",
             "researchGenres", new String[]{"Data Science"}
         },
         {
@@ -151,6 +169,7 @@ public class DataSample {
             "yearPublished", "2018",
             "researchDOI", "10.5678/kl567mn",
             "researchCourse", "BSIT-MAA",
+            "researchDoctype", "Capstone",
             "researchGenres", new String[]{"Game Development"}
         },
         {
@@ -159,6 +178,7 @@ public class DataSample {
             "yearPublished", "2019",
             "researchDOI", "10.5678/op678qr",
             "researchCourse", "BSCS-DF",
+            "researchDoctype", "Internship",
             "researchGenres", new String[]{"Cybersecurity"}
         }
     };
