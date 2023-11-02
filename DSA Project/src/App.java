@@ -34,16 +34,18 @@ class App {
 
         // Filter by course
         v1App.resetCloneMap();
-        String[] filteredByCourse = v1App.filterCourses("BSCS-ML");
-        System.out.println("Filtered by Course (BSCS-ML): " + Arrays.toString(filteredByCourse));
+        String[] filteredbyWord = v1App.searchKeyword("Machine");
+        System.out.println(Arrays.toString(filteredbyWord));
+        // String[] filteredByCourse = v1App.filterCourses("BSCS-ML");
+        // System.out.println("Filtered by Course (BSCS-ML): " + Arrays.toString(filteredByCourse));
 
-        // Filter by year
-        String[] filteredByYear = v1App.filterYears("2019");
-        System.out.println("Filtered by Year (2019): " + Arrays.toString(filteredByYear));
+        // // Filter by year
+        // String[] filteredByYear = v1App.filterYears("2019");
+        // System.out.println("Filtered by Year (2019): " + Arrays.toString(filteredByYear));
 
-        // Filter by type
-        String[] filteredByType = v1App.filterTypes("Internship");
-        System.out.println("Filtered by Type (Thesis): " + Arrays.toString(filteredByType));
+        // // Filter by type
+        // String[] filteredByType = v1App.filterTypes("Internship");
+        // System.out.println("Filtered by Type (Thesis): " + Arrays.toString(filteredByType));
     }
 
     public void researchCompileInsert() {
@@ -229,6 +231,26 @@ class App {
         List<String> researchNodes = new ArrayList<>(this.copyNodeMap.keySet());
         filteredList = convertListToArray(researchNodes);
     }
+
+    public String[] searchKeyword(String keyword) {
+        List<String> filteredNodes = new ArrayList<>(Arrays.asList(filteredList));
+    
+        Iterator<String> iterator = filteredNodes.iterator();
+        while (iterator.hasNext()) {
+            String node = iterator.next();
+            Node researchNode = this.nodeMap.get(node);
+            String rTitle = researchNode.getResearchTitle().toLowerCase();
+            if (!rTitle.contains(keyword.toLowerCase())) {
+                iterator.remove(); // Use iterator to safely remove elements from the list
+            }
+        }
+    
+        // Convert the filteredNodes list to a String array
+        filteredList = convertListToArray(filteredNodes);
+        return filteredList;
+    }
+
+
 
 }
 
