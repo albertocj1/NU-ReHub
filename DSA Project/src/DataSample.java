@@ -13,7 +13,7 @@ public class DataSample {
         {
             "researchTitle", "Scalability and Performance Optimization in Modern Web Applications",
             "researchAuthor", "Juan Cruz",
-            "yearPublished", "2018",
+            "yearPublished", "2020",
             "researchDOI", "10.5678/efgh5678",
             "researchCourse", "BSIT-MWA",
             "researchDoctype", "Capstone",
@@ -22,7 +22,7 @@ public class DataSample {
         {
             "researchTitle", "Mitigating Cybersecurity Threats in Internet of Things (IoT) Devices",
             "researchAuthor", "Luz Reyes",
-            "yearPublished", "2017",
+            "yearPublished", "2020",
             "researchDOI", "10.5678/ijkl9012",
             "researchCourse", "BSCS-DF",
             "researchDoctype", "Internship",
@@ -31,7 +31,7 @@ public class DataSample {
         {
             "researchTitle", "Advancements in Natural Language Processing using Deep Learning Techniques",
             "researchAuthor", "Antonio Garcia",
-            "yearPublished", "2019",
+            "yearPublished", "2020",
             "researchDOI", "10.5678/mnop3456",
             "researchCourse", "BSCS-ML",
             "researchDoctype", "Internship",
@@ -40,7 +40,7 @@ public class DataSample {
         {
             "researchTitle", "Exploring Generative Adversarial Networks (GANs) for Image Synthesis",
             "researchAuthor", "Rosario Villanuava",
-            "yearPublished", "2016",
+            "yearPublished", "2020",
             "researchDOI", "10.5678/qrst5678",
             "researchCourse", "BSCS-ML",
             "researchDoctype", "Capstone",
@@ -67,7 +67,7 @@ public class DataSample {
         {
             "researchTitle", "Predictive Analytics in Game Development",
             "researchAuthor", "Alejandro Cruzado",
-            "yearPublished", "2019",
+            "yearPublished", "2022",
             "researchDOI", "10.5678/ef123gh",
             "researchCourse", "BSIT-MAA",
             "researchDoctype", "Capstone",
@@ -76,7 +76,7 @@ public class DataSample {
         {
             "researchTitle", "Digital Forensics and Cyber Threat Detection",
             "researchAuthor", "Carmen Torres",
-            "yearPublished", "2018",
+            "yearPublished", "2020",
             "researchDOI", "10.5678/ij123kl",
             "researchCourse", "BSCS-DF",
             "researchDoctype", "Capstone",
@@ -85,7 +85,7 @@ public class DataSample {
         {
             "researchTitle", "Natural Language Processing for Sentiment Analysis",
             "researchAuthor", "Rodrigo Fernandez",
-            "yearPublished", "2020",
+            "yearPublished", "2021",
             "researchDOI", "10.5678/mn123op",
             "researchCourse", "BSCS-ML",
             "researchDoctype", "Internship",
@@ -103,7 +103,7 @@ public class DataSample {
         {
             "researchTitle", "Visual Effects and Animation Techniques in Game Development",
             "researchAuthor", "Jose Mendoza",
-            "yearPublished", "2017",
+            "yearPublished", "2021",
             "researchDOI", "10.5678/uv123wx",
             "researchCourse", "BSIT-MAA",
             "researchDoctype", "Capstone",
@@ -112,7 +112,7 @@ public class DataSample {
         {
             "researchTitle", "Securing IoT Devices in Data Forensics",
             "researchAuthor", "Aurora Dela Cruz",
-            "yearPublished", "2018",
+            "yearPublished", "2021",
             "researchDOI", "10.5678/yz123ab",
             "researchCourse", "BSCS-DF",
             "researchDoctype", "Internship",
@@ -121,7 +121,7 @@ public class DataSample {
         {
             "researchTitle", "Machine Learning for Financial Data Analysis",
             "researchAuthor", "Manuel Gonzales",
-            "yearPublished", "2019",
+            "yearPublished", "2020",
             "researchDOI", "10.5678/bc234de",
             "researchCourse", "BSCS-ML",
             "researchDoctype", "Internship",
@@ -139,7 +139,7 @@ public class DataSample {
         {
             "researchTitle", "Game Engine Development for Virtual Reality Experiences",
             "researchAuthor", "Isidro Espinoza",
-            "yearPublished", "2016",
+            "yearPublished", "2020",
             "researchDOI", "10.5678/ij234kl",
             "researchCourse", "BSIT-MAA",
             "researchDoctype", "Capstone",
@@ -166,7 +166,7 @@ public class DataSample {
         {
             "researchTitle", "Mobile App Development for Game-Based Learning",
             "researchAuthor", "Teresa Sison",
-            "yearPublished", "2018",
+            "yearPublished", "2022",
             "researchDOI", "10.5678/kl567mn",
             "researchCourse", "BSIT-MAA",
             "researchDoctype", "Capstone",
@@ -175,7 +175,7 @@ public class DataSample {
         {
             "researchTitle", "Forensic Analysis of Cyber Attacks in IoT Networks",
             "researchAuthor", "Reynaldo Caballero",
-            "yearPublished", "2019",
+            "yearPublished", "2022",
             "researchDOI", "10.5678/op678qr",
             "researchCourse", "BSCS-DF",
             "researchDoctype", "Internship",
