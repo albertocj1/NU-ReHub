@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
-class App {
+class researchHashMap {
 
     HashMap<String, Node> nodeMap = new HashMap<>();
     HashMap<String, Node> copyNodeMap = new HashMap<>();
@@ -12,7 +12,7 @@ class App {
 
 
     public static void main(String[] args) {
-        App v1App = new App();
+        researchHashMap v1App = new researchHashMap();
         v1App.researchCompileInsert();
         // System.out.println(v1App.nodeMap);
 
