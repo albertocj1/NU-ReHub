@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "History",
+            "request": "launch",
+            "mainClass": "History",
+            "projectName": "CCDATRCL_PROJECT_COM222_3ae66440"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
