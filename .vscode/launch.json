@@ -6,17 +6,67 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Current File",
+            "name": "App",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "App",
+            "projectName": "Draft_Project_d099869",
+            "vmArgs": "--module-path C:/javafx-sdk-20.0.1/lib --add-modules javafx.controls,javafx.fxml,javafx.web"
+        },
+        {
+            "type": "java",
+            "name": "HistoryStack",
+            "request": "launch",
+            "mainClass": "Model.HistoryStack",
+            "projectName": "Draft_Project_78013752",
+            "vmArgs": "--module-path C:/javafx-sdk-20.0.1/lib --add-modules javafx.controls,javafx.fxml,javafx.web"
+        },
+        {
+            "type": "java",
+            "name": "Tite",
+            "request": "launch",
+            "mainClass": "Controller.Tite",
+            "projectName": "Draft_Project_78013752",
+            "vmArgs": "--module-path C:/javafx-sdk-20.0.1/lib --add-modules javafx.controls,javafx.fxml,javafx.web"
+        },
+        {
+            "type": "java",
+            "name": "U_DiscoverController",
+            "request": "launch",
+            "mainClass": "Controller.U_DiscoverController",
+            "projectName": "Draft_Project_78013752",
+            "vmArgs": "--module-path C:/javafx-sdk-20.0.1/lib --add-modules javafx.controls,javafx.fxml,javafx.web"
         },
         {
             "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
-            "projectName": "CCDATRCL_PROJECT_COM222_52c27580",
-            "vmArgs": "--module-path C:/openjfx-20.0.1_windows-x64_bin-sdk/javafx-sdk-20.0.1/lib --add-modules javafx.controls,javafx.fxml"
+            "projectName": "Draft_Project_78013752",
+            "vmArgs": "--module-path C:/javafx-sdk-20.0.1/lib --add-modules javafx.controls,javafx.fxml,javafx.web"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Draft_Project_e3627d5d",
+            "vmArgs": "--module-path C:/javafx-sdk-20.0.1/lib --add-modules javafx.controls,javafx.fxml,javafx.web"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "projectName": "Draft_Project_e3627d5d",
+            "vmArgs": "--module-path C:/javafx-sdk-20.0.1/lib --add-modules javafx.controls,javafx.fxml,javafx.web"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Draft_Project_351c17ef",
+            "vmArgs": "--module-path C:/javafx-sdk-20.0.1/lib --add-modules javafx.controls,javafx.fxml,javafx.web"
         }
     ]
 }

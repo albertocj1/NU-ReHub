@@ -1,0 +1,11 @@
+.transparent-button {
+    -fx-background-color: transparent;
+    -fx-border-width: 0px; /* Initial border width */
+    -fx-background-radius: 20px; /* Remove rounded corners */
+    -fx-border-radius: 20px; /* Remove rounded corners */
+}
+
+.transparent-button:hover {
+    -fx-border-color: #406dde; /* Border color on hover (e.g., red) */
+    -fx-border-width: 3px; /* Border width on hover (e.g., 2px) */
+}

@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1124.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.A_InternshipController">
+   <children>
+      <Rectangle fill="#262468" height="28.0" layoutX="-14.0" layoutY="141.0" stroke="#f0f3f6" strokeType="INSIDE" width="1150.0" />
+      <TextField fx:id="searchTextField" layoutX="677.0" layoutY="151.0" prefHeight="26.0" prefWidth="266.0" promptText="Search campus paper" style="-fx-background-color: #FFFFFF;">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <Rectangle fill="#f0f3f6" height="600.0" layoutX="225.0" layoutY="210.0" stroke="#f0f3f6" strokeType="INSIDE" width="719.0" />
+      <ImageView fitHeight="57.76" fitWidth="47.61" layoutX="24.98" layoutY="35.13">
+         <image>
+            <Image url="@../Images/nu_logo.png" />
+         </image>
+      </ImageView>
+      <Text fill="#262468" layoutX="77.27" layoutY="72.39" strokeType="OUTSIDE" strokeWidth="0.0" text="ReHub">
+         <font>
+            <Font name="Arial Bold" size="31.22" />
+         </font>
+      </Text>
+      <ImageView fx:id="searchPic" fitHeight="20.0" fitWidth="20.0" layoutX="912.8699999999999" layoutY="154.62" opacity="0.33">
+         <image>
+            <Image url="@../Images/search-interface-symbol.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.08" fitWidth="21.08" layoutX="1089.66" layoutY="53.64">
+         <image>
+            <Image url="@../Images/logout.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.88" fitWidth="28.88" layoutX="1052.0" layoutY="49.0">
+         <image>
+            <Image url="@../Images/user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="62.0" layoutY="174.0" text="Home/">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="18.73" fitWidth="18.73" layoutX="39.0" layoutY="237.0">
+         <image>
+            <Image url="@../Images/filter(1).png" />
+         </image>
+      </ImageView>
+      <Text layoutX="68.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter">
+         <font>
+            <Font name="Arial" size="15.61" />
+         </font>
+      </Text>
+      <Text layoutX="36.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Courses">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="cbBSCSML" layoutX="37.0" layoutY="287.0" mnemonicParsing="false" onAction="#ToggleGroupButtonCourse" style="-fx-background-color: #ffffff;" styleClass="checkbox" stylesheets="@CSS/check_box.css" text="BSCS-ML">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="cbBSCSDF" layoutX="37.0" layoutY="306.0" mnemonicParsing="false" onAction="#ToggleGroupButtonCourse" style="-fx-background-color: #ffffff;" styleClass="checkbox" stylesheets="@CSS/check_box.css" text="BSCS-DF">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="cbBSITMWA" layoutX="111.0" layoutY="287.0" mnemonicParsing="false" onAction="#ToggleGroupButtonCourse" style="-fx-background-color: #ffffff;" styleClass="checkbox" stylesheets="@CSS/check_box.css" text="BSIT-MWA">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="cbBSITMAA" layoutX="111.0" layoutY="306.0" mnemonicParsing="false" onAction="#ToggleGroupButtonCourse" style="-fx-background-color: #ffffff;" styleClass="checkbox" stylesheets="@CSS/check_box.css" text="BSIT-MAA">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </CheckBox>
+      <Text layoutX="36.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year Published">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="cb2023" layoutX="37.0" layoutY="360.0" mnemonicParsing="false" onAction="#ToggleGroupButtonYear" style="-fx-background-color: #ffffff;" styleClass="checkbox" stylesheets="@CSS/check_box.css" text="2023">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="cb2022" layoutX="37.0" layoutY="379.0" mnemonicParsing="false" onAction="#ToggleGroupButtonYear" style="-fx-background-color: #ffffff;" styleClass="checkbox" stylesheets="@CSS/check_box.css" text="2022">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="cb2021" layoutX="111.0" layoutY="360.0" mnemonicParsing="false" onAction="#ToggleGroupButtonYear" style="-fx-background-color: #ffffff;" styleClass="checkbox" stylesheets="@CSS/check_box.css" text="2021">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="cb2020" layoutX="111.0" layoutY="379.0" mnemonicParsing="false" onAction="#ToggleGroupButtonYear" style="-fx-background-color: #ffffff;" styleClass="checkbox" stylesheets="@CSS/check_box.css" text="2020">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="244.0" layoutY="158.0">
+         <font>
+            <Font name="Arial Bold" size="31.25" />
+         </font>
+      </Label>
+      <Button fx:id="searchButton" layoutX="903.0" layoutY="163.0" mnemonicParsing="false" onAction="#submitSearch" opacity="0.0" prefHeight="25.0" prefWidth="0.0" text="Search" />
+      <Pane layoutX="270.0" layoutY="240.0" prefHeight="220.0" prefWidth="170.0">
+         <children>
+            <Rectangle arcHeight="19.38" arcWidth="19.38" fill="#d9d9d9" height="130.0" layoutX="15.0" layoutY="11.0" onMouseEntered="#showPaneTool1" stroke="#d9d9d9" strokeType="INSIDE" width="132.0" />
+            <Rectangle arcHeight="19.38" arcWidth="19.38" fill="#262468" height="70.0" layoutX="15.0" layoutY="122.0" stroke="#262468" strokeType="INSIDE" width="132.0" />
+            <ImageView fx:id="p1" fitHeight="95.0" fitWidth="67.0" layoutX="47.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="rName1" fill="WHITE" layoutX="23.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="116.94415894150734">
+               <font>
+                  <Font name="Arial Bold" size="8.0" />
+               </font>
+            </Text>
+            <Text fx:id="rAuthor1" fill="WHITE" layoutX="24.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="90.18499654531479">
+               <font>
+                  <Font name="Arial Bold" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rCourse1" fill="WHITE" layoutX="24.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="64.2395047545433">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rPublished1" fill="WHITE" layoutX="90.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="48.407210290431976">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rType1" layoutX="504.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+            <Pane fx:id="paneTool1" layoutX="14.0" layoutY="10.0" onMouseExited="#hidePaneTool1" prefHeight="183.0" prefWidth="134.0">
+               <children>
+                  <Rectangle arcHeight="19.38" arcWidth="19.38" height="181.0" opacity="0.72" stroke="#d9d9d900" strokeType="INSIDE" width="132.0" />
+                  <Circle fill="#406bde" layoutX="40.0" layoutY="89.0" radius="22.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <Circle fill="#ff1f1f" layoutX="96.0" layoutY="89.0" radius="22.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="30.0" layoutY="81.0">
+                     <image>
+                        <Image url="@../Images/pencil.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="86.0" layoutY="80.0">
+                     <image>
+                        <Image url="@../Images/delete.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="editButton1" layoutX="13.0" layoutY="67.0" mnemonicParsing="false" onAction="#editButtonClicked1" opacity="0.0" prefHeight="42.0" prefWidth="52.0" text="edit" />
+                  <Button fx:id="deleteButton1" layoutX="70.0" layoutY="66.0" mnemonicParsing="false" onAction="#deleteButtton1Clicked" opacity="0.0" prefHeight="42.0" prefWidth="52.0" text="delete" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="290.0" layoutY="698.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../Images/arrow-down-sign-to-navigate.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="322.0" layoutY="698.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+         <image>
+            <Image url="@../Images/arrow-down-sign-to-navigate.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="prevButton" layoutX="287.0" layoutY="693.0" mnemonicParsing="false" onAction="#prevPage" opacity="0.0" prefHeight="37.0" prefWidth="28.0" text="prev" />
+      <Button fx:id="nextButton" layoutX="325.0" layoutY="694.0" mnemonicParsing="false" onAction="#nextPage" opacity="0.0" prefHeight="37.0" prefWidth="22.0" text="next" />
+      <Label layoutX="21.0" layoutY="91.0" prefHeight="61.0" prefWidth="474.0" text="Welcome to your Control Center" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="typeText" layoutX="151.0" layoutY="174.0" text="kind">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Label>
+      <Pane layoutX="424.0" layoutY="241.0" prefHeight="220.0" prefWidth="170.0">
+         <children>
+            <Rectangle arcHeight="19.38" arcWidth="19.38" fill="#d9d9d9" height="130.0" layoutX="15.0" layoutY="11.0" onMouseEntered="#showPaneTool2" stroke="#d9d9d9" strokeType="INSIDE" width="132.0" />
+            <Rectangle arcHeight="19.38" arcWidth="19.38" fill="#262468" height="70.0" layoutX="15.0" layoutY="122.0" stroke="#262468" strokeType="INSIDE" width="132.0" />
+            <ImageView fx:id="p2" fitHeight="95.0" fitWidth="67.0" layoutX="47.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="rName2" fill="WHITE" layoutX="23.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="116.94415894150734">
+               <font>
+                  <Font name="Arial Bold" size="8.0" />
+               </font>
+            </Text>
+            <Text fx:id="rAuthor2" fill="WHITE" layoutX="24.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="90.18499654531479">
+               <font>
+                  <Font name="Arial Bold" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rCourse2" fill="WHITE" layoutX="24.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="64.2395047545433">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rPublished2" fill="WHITE" layoutX="90.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="48.407210290431976">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rType2" layoutX="504.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+            <Pane fx:id="paneTool2" layoutX="15.0" layoutY="10.0" onMouseExited="#hidePaneTool2" prefHeight="183.0" prefWidth="134.0">
+               <children>
+                  <Rectangle arcHeight="19.38" arcWidth="19.38" height="181.0" opacity="0.72" stroke="#d9d9d900" strokeType="INSIDE" width="132.0" />
+                  <Circle fill="#406bde" layoutX="40.0" layoutY="89.0" radius="22.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <Circle fill="#ff1f1f" layoutX="96.0" layoutY="89.0" radius="22.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="30.0" layoutY="81.0">
+                     <image>
+                        <Image url="@../Images/pencil.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="86.0" layoutY="80.0">
+                     <image>
+                        <Image url="@../Images/delete.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="editButton2" layoutX="13.0" layoutY="67.0" mnemonicParsing="false" onAction="#editButtonClicked2" opacity="0.0" prefHeight="42.0" prefWidth="52.0" text="edit" />
+                  <Button fx:id="deleteButton2" layoutX="69.0" layoutY="67.0" mnemonicParsing="false" onAction="#deleteButtton2Clicked" opacity="0.0" prefHeight="42.0" prefWidth="52.0" text="delete" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="580.0" layoutY="242.0" prefHeight="220.0" prefWidth="170.0">
+         <children>
+            <Rectangle arcHeight="19.38" arcWidth="19.38" fill="#d9d9d9" height="130.0" layoutX="15.0" layoutY="11.0" onMouseEntered="#showPaneTool3" stroke="#d9d9d9" strokeType="INSIDE" width="132.0" />
+            <Rectangle arcHeight="19.38" arcWidth="19.38" fill="#262468" height="70.0" layoutX="15.0" layoutY="122.0" stroke="#262468" strokeType="INSIDE" width="132.0" />
+            <ImageView fx:id="p3" fitHeight="95.0" fitWidth="67.0" layoutX="47.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="rName3" fill="WHITE" layoutX="23.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="116.94415894150734">
+               <font>
+                  <Font name="Arial Bold" size="8.0" />
+               </font>
+            </Text>
+            <Text fx:id="rAuthor3" fill="WHITE" layoutX="24.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="90.18499654531479">
+               <font>
+                  <Font name="Arial Bold" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rCourse3" fill="WHITE" layoutX="24.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="64.2395047545433">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rPublished3" fill="WHITE" layoutX="90.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="48.407210290431976">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rType3" layoutX="504.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+            <Pane fx:id="paneTool3" layoutX="14.0" layoutY="11.0" onMouseExited="#hidePaneTool3" prefHeight="183.0" prefWidth="134.0">
+               <children>
+                  <Rectangle arcHeight="19.38" arcWidth="19.38" height="181.0" opacity="0.72" stroke="#d9d9d900" strokeType="INSIDE" width="132.0" />
+                  <Circle fill="#406bde" layoutX="40.0" layoutY="89.0" radius="22.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <Circle fill="#ff1f1f" layoutX="96.0" layoutY="89.0" radius="22.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="30.0" layoutY="81.0">
+                     <image>
+                        <Image url="@../Images/pencil.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="86.0" layoutY="80.0">
+                     <image>
+                        <Image url="@../Images/delete.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="editButton3" layoutX="13.0" layoutY="67.0" mnemonicParsing="false" onAction="#editButtonClicked3" opacity="0.0" prefHeight="42.0" prefWidth="52.0" text="edit" />
+                  <Button fx:id="deleteButton3" layoutX="69.0" layoutY="67.0" mnemonicParsing="false" onAction="#deleteButtton3Clicked" opacity="0.0" prefHeight="42.0" prefWidth="52.0" text="delete" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="733.0" layoutY="243.0" prefHeight="220.0" prefWidth="170.0">
+         <children>
+            <Rectangle arcHeight="19.38" arcWidth="19.38" fill="#d9d9d9" height="130.0" layoutX="14.0" layoutY="10.0" onMouseEntered="#showPaneTool4" stroke="#d9d9d9" strokeType="INSIDE" width="132.0" />
+            <Rectangle arcHeight="19.38" arcWidth="19.38" fill="#262468" height="70.0" layoutX="15.0" layoutY="122.0" stroke="#262468" strokeType="INSIDE" width="132.0" />
+            <ImageView fx:id="p4" fitHeight="95.0" fitWidth="67.0" layoutX="47.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="rName4" fill="WHITE" layoutX="23.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="116.94415894150734">
+               <font>
+                  <Font name="Arial Bold" size="8.0" />
+               </font>
+            </Text>
+            <Text fx:id="rAuthor4" fill="WHITE" layoutX="24.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="90.18499654531479">
+               <font>
+                  <Font name="Arial Bold" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rCourse4" fill="WHITE" layoutX="24.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="64.2395047545433">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rPublished4" fill="WHITE" layoutX="90.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="48.407210290431976">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rType4" layoutX="504.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+            <Pane fx:id="paneTool4" layoutX="15.0" layoutY="10.0" onMouseExited="#hidePaneTool4" prefHeight="183.0" prefWidth="134.0">
+               <children>
+                  <Rectangle arcHeight="19.38" arcWidth="19.38" height="181.0" opacity="0.72" stroke="#d9d9d900" strokeType="INSIDE" width="132.0" />
+                  <Circle fill="#406bde" layoutX="40.0" layoutY="89.0" radius="22.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <Circle fill="#ff1f1f" layoutX="96.0" layoutY="89.0" radius="22.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="30.0" layoutY="81.0">
+                     <image>
+                        <Image url="@../Images/pencil.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="86.0" layoutY="80.0">
+                     <image>
+                        <Image url="@../Images/delete.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="editButton4" layoutX="13.0" layoutY="67.0" mnemonicParsing="false" onAction="#editButtonClicked4" opacity="0.0" prefHeight="42.0" prefWidth="52.0" text="edit" />
+                  <Button fx:id="deleteButton4" layoutX="69.0" layoutY="67.0" mnemonicParsing="false" onAction="#deleteButtton4Clicked" opacity="0.0" prefHeight="42.0" prefWidth="52.0" text="delete" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="270.0" layoutY="448.0" prefHeight="220.0" prefWidth="170.0">
+         <children>
+            <Rectangle arcHeight="19.38" arcWidth="19.38" fill="#d9d9d9" height="130.0" layoutX="15.0" layoutY="11.0" onMouseEntered="#showPaneTool5" stroke="#d9d9d9" strokeType="INSIDE" width="132.0" />
+            <Rectangle arcHeight="19.38" arcWidth="19.38" fill="#262468" height="70.0" layoutX="15.0" layoutY="122.0" stroke="#262468" strokeType="INSIDE" width="132.0" />
+            <ImageView fx:id="p5" fitHeight="95.0" fitWidth="67.0" layoutX="47.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="rName5" fill="WHITE" layoutX="23.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="116.94415894150734">
+               <font>
+                  <Font name="Arial Bold" size="8.0" />
+               </font>
+            </Text>
+            <Text fx:id="rAuthor5" fill="WHITE" layoutX="24.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="90.18499654531479">
+               <font>
+                  <Font name="Arial Bold" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rCourse5" fill="WHITE" layoutX="24.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="64.2395047545433">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rPublished5" fill="WHITE" layoutX="90.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="48.407210290431976">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rType5" layoutX="504.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+            <Pane fx:id="paneTool5" layoutX="15.0" layoutY="11.0" onMouseExited="#hidePaneTool5" prefHeight="183.0" prefWidth="134.0">
+               <children>
+                  <Rectangle arcHeight="19.38" arcWidth="19.38" height="181.0" opacity="0.72" stroke="#d9d9d900" strokeType="INSIDE" width="132.0" />
+                  <Circle fill="#406bde" layoutX="40.0" layoutY="89.0" radius="22.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <Circle fill="#ff1f1f" layoutX="96.0" layoutY="89.0" radius="22.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="30.0" layoutY="81.0">
+                     <image>
+                        <Image url="@../Images/pencil.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="86.0" layoutY="80.0">
+                     <image>
+                        <Image url="@../Images/delete.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="editButton5" layoutX="13.0" layoutY="67.0" mnemonicParsing="false" onAction="#editButtonClicked5" opacity="0.0" prefHeight="42.0" prefWidth="52.0" text="edit" />
+                  <Button fx:id="deleteButton5" layoutX="69.0" layoutY="67.0" mnemonicParsing="false" onAction="#deleteButtton5Clicked" opacity="0.0" prefHeight="42.0" prefWidth="52.0" text="delete" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="424.0" layoutY="449.0" prefHeight="220.0" prefWidth="170.0">
+         <children>
+            <Rectangle arcHeight="19.38" arcWidth="19.38" fill="#d9d9d9" height="130.0" layoutX="15.0" layoutY="11.0" onMouseEntered="#showPaneTool6" stroke="#d9d9d9" strokeType="INSIDE" width="132.0" />
+            <Rectangle arcHeight="19.38" arcWidth="19.38" fill="#262468" height="70.0" layoutX="15.0" layoutY="122.0" stroke="#262468" strokeType="INSIDE" width="132.0" />
+            <ImageView fx:id="p6" fitHeight="95.0" fitWidth="67.0" layoutX="47.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="rName6" fill="WHITE" layoutX="23.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="116.94415894150734">
+               <font>
+                  <Font name="Arial Bold" size="8.0" />
+               </font>
+            </Text>
+            <Text fx:id="rAuthor6" fill="WHITE" layoutX="24.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="90.18499654531479">
+               <font>
+                  <Font name="Arial Bold" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rCourse6" fill="WHITE" layoutX="24.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="64.2395047545433">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rPublished6" fill="WHITE" layoutX="90.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="48.407210290431976">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rType6" layoutX="504.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+            <Pane fx:id="paneTool6" layoutX="15.0" layoutY="10.0" onMouseExited="#hidePaneTool6" prefHeight="183.0" prefWidth="134.0">
+               <children>
+                  <Rectangle arcHeight="19.38" arcWidth="19.38" height="181.0" opacity="0.72" stroke="#d9d9d900" strokeType="INSIDE" width="132.0" />
+                  <Circle fill="#406bde" layoutX="40.0" layoutY="89.0" radius="22.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <Circle fill="#ff1f1f" layoutX="96.0" layoutY="89.0" radius="22.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="30.0" layoutY="81.0">
+                     <image>
+                        <Image url="@../Images/pencil.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="86.0" layoutY="80.0">
+                     <image>
+                        <Image url="@../Images/delete.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="editButton6" layoutX="13.0" layoutY="67.0" mnemonicParsing="false" onAction="#editButtonClicked6" opacity="0.0" prefHeight="42.0" prefWidth="52.0" text="edit" />
+                  <Button fx:id="deleteButton6" layoutX="69.0" layoutY="67.0" mnemonicParsing="false" onAction="#deleteButtton6Clicked" opacity="0.0" prefHeight="42.0" prefWidth="52.0" text="delete" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="580.0" layoutY="450.0" prefHeight="220.0" prefWidth="170.0">
+         <children>
+            <Rectangle arcHeight="19.38" arcWidth="19.38" fill="#d9d9d9" height="130.0" layoutX="15.0" layoutY="11.0" onMouseEntered="#showPaneTool7" stroke="#d9d9d9" strokeType="INSIDE" width="132.0" />
+            <Rectangle arcHeight="19.38" arcWidth="19.38" fill="#262468" height="70.0" layoutX="15.0" layoutY="122.0" stroke="#262468" strokeType="INSIDE" width="132.0" />
+            <ImageView fx:id="p7" fitHeight="95.0" fitWidth="67.0" layoutX="47.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="rName7" fill="WHITE" layoutX="23.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="116.94415894150734">
+               <font>
+                  <Font name="Arial Bold" size="8.0" />
+               </font>
+            </Text>
+            <Text fx:id="rAuthor7" fill="WHITE" layoutX="24.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="90.18499654531479">
+               <font>
+                  <Font name="Arial Bold" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rCourse7" fill="WHITE" layoutX="24.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="64.2395047545433">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rPublished7" fill="WHITE" layoutX="90.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="48.407210290431976">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rType7" layoutX="504.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+            <Pane fx:id="paneTool7" layoutX="15.0" layoutY="10.0" onMouseExited="#hidePaneTool7" prefHeight="183.0" prefWidth="134.0">
+               <children>
+                  <Rectangle arcHeight="19.38" arcWidth="19.38" height="181.0" opacity="0.72" stroke="#d9d9d900" strokeType="INSIDE" width="132.0" />
+                  <Circle fill="#406bde" layoutX="40.0" layoutY="89.0" radius="22.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <Circle fill="#ff1f1f" layoutX="96.0" layoutY="89.0" radius="22.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="30.0" layoutY="81.0">
+                     <image>
+                        <Image url="@../Images/pencil.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="86.0" layoutY="80.0">
+                     <image>
+                        <Image url="@../Images/delete.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="editButton7" layoutX="13.0" layoutY="67.0" mnemonicParsing="false" onAction="#editButtonClicked7" opacity="0.0" prefHeight="42.0" prefWidth="52.0" text="edit" />
+                  <Button fx:id="deleteButton7" layoutX="69.0" layoutY="67.0" mnemonicParsing="false" onAction="#deleteButtton7Clicked" opacity="0.0" prefHeight="42.0" prefWidth="52.0" text="delete" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="734.0" layoutY="451.0" prefHeight="220.0" prefWidth="170.0">
+         <children>
+            <Rectangle arcHeight="19.38" arcWidth="19.38" fill="#d9d9d9" height="130.0" layoutX="15.0" layoutY="11.0" onMouseEntered="#showPaneTool8" stroke="#d9d9d9" strokeType="INSIDE" width="132.0" />
+            <Rectangle arcHeight="19.38" arcWidth="19.38" fill="#262468" height="70.0" layoutX="15.0" layoutY="122.0" stroke="#262468" strokeType="INSIDE" width="132.0" />
+            <ImageView fx:id="p8" fitHeight="95.0" fitWidth="67.0" layoutX="47.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="rName8" fill="WHITE" layoutX="23.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="116.94415894150734">
+               <font>
+                  <Font name="Arial Bold" size="8.0" />
+               </font>
+            </Text>
+            <Text fx:id="rAuthor8" fill="WHITE" layoutX="24.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="90.18499654531479">
+               <font>
+                  <Font name="Arial Bold" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rCourse8" fill="WHITE" layoutX="24.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="64.2395047545433">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rPublished8" fill="WHITE" layoutX="90.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="48.407210290431976">
+               <font>
+                  <Font name="Arial" size="7.0" />
+               </font>
+            </Text>
+            <Text fx:id="rType8" layoutX="504.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+            <Pane fx:id="paneTool8" layoutX="15.0" layoutY="10.0" onMouseExited="#hidePaneTool8" prefHeight="183.0" prefWidth="134.0">
+               <children>
+                  <Rectangle arcHeight="19.38" arcWidth="19.38" height="181.0" opacity="0.72" stroke="#d9d9d900" strokeType="INSIDE" width="132.0" />
+                  <Circle fill="#406bde" layoutX="40.0" layoutY="89.0" radius="22.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <Circle fill="#ff1f1f" layoutX="96.0" layoutY="89.0" radius="22.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="30.0" layoutY="81.0">
+                     <image>
+                        <Image url="@../Images/pencil.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="86.0" layoutY="80.0">
+                     <image>
+                        <Image url="@../Images/delete.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="editButton8" layoutX="13.0" layoutY="67.0" mnemonicParsing="false" onAction="#editButtonClicked8" opacity="0.0" prefHeight="42.0" prefWidth="52.0" text="edit" />
+                  <Button fx:id="deleteButton8" layoutX="69.0" layoutY="67.0" mnemonicParsing="false" onAction="#deleteButtton8Clicked" opacity="0.0" prefHeight="42.0" prefWidth="52.0" text="delete" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="addPaperPane" layoutX="1123.0" layoutY="208.0" onMouseClicked="#exitAddPaper" prefHeight="600.0" prefWidth="390.0" style="-fx-background-color: #FDFEFF;">
+         <children>
+            <Text layoutX="15.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload a File">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#00000099" layoutX="16.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File Upload Description" wrappingWidth="172.5">
+               <font>
+                  <Font name="Arial" size="9.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="177.0" fitWidth="345.0" layoutX="19.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Place%20your%20pdf%20here.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="14.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Research Details">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#00000099" layoutX="14.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill in all of the relevant information for research item. Do not leave anything blank." wrappingWidth="344.5">
+               <font>
+                  <Font name="Arial" size="9.0" />
+               </font>
+            </Text>
+            <Text layoutX="24.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Research Title:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="24.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author/s:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="24.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year Published:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="24.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course/Program:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="24.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Research Doi:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="rTitleTF" layoutX="125.0" layoutY="275.0" prefHeight="4.0" prefWidth="237.0" />
+            <TextField fx:id="rAuthorTF" layoutX="125.0" layoutY="315.0" prefHeight="25.0" prefWidth="237.0" />
+            <TextField fx:id="rYearTF" layoutX="125.0" layoutY="354.0" prefHeight="25.0" prefWidth="237.0" />
+            <TextField fx:id="rCourseTF" layoutX="126.0" layoutY="394.0" prefHeight="25.0" prefWidth="237.0" />
+            <TextField fx:id="rDOITF" layoutX="125.0" layoutY="435.0" prefHeight="25.0" prefWidth="237.0" />
+            <ImageView fitHeight="25.0" fitWidth="159.0" layoutX="16.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/White%20rectangle.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="160.0" layoutX="203.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Blue%20rectangle.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="76.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discard">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="267.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Save">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Label layoutX="126.0" layoutY="300.0" />
+            <Label fx:id="warninglabel1" layoutX="127.0" layoutY="295.0" opacity="0.5" prefHeight="17.0" prefWidth="221.0">
+               <font>
+                  <Font name="Arial" size="8.0" />
+               </font>
+            </Label>
+            <Label fx:id="warninglabel2" layoutX="127.0" layoutY="335.0" opacity="0.5" prefHeight="17.0" prefWidth="221.0">
+               <font>
+                  <Font name="Arial" size="8.0" />
+               </font>
+            </Label>
+            <Label fx:id="warninglabel3" layoutX="127.0" layoutY="374.0" opacity="0.5" prefHeight="17.0" prefWidth="221.0">
+               <font>
+                  <Font name="Arial" size="8.0" />
+               </font>
+            </Label>
+            <Label fx:id="warninglabel4" layoutX="127.0" layoutY="414.0" opacity="0.5" prefHeight="17.0" prefWidth="221.0">
+               <font>
+                  <Font name="Arial" size="8.0" />
+               </font>
+            </Label>
+            <Label fx:id="warninglabel5" layoutX="127.0" layoutY="455.0" opacity="0.5" prefHeight="17.0" prefWidth="221.0">
+               <font>
+                  <Font name="Arial" size="8.0" />
+               </font>
+            </Label>
+            <Button fx:id="saveButton" layoutX="204.0" layoutY="491.0" mnemonicParsing="false" onAction="#saveMethod" opacity="0.0" prefHeight="20.0" prefWidth="159.0">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonDiscard" layoutX="16.0" layoutY="486.0" mnemonicParsing="false" onAction="#discardAction" opacity="0.0" prefHeight="27.0" prefWidth="161.0">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <Button fx:id="btAddPDF1" layoutX="25.0" layoutY="63.0" mnemonicParsing="false" onAction="#onFileChooseButtonClicked" opacity="0.0" prefHeight="139.0" prefWidth="337.0" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="20.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/setting.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="rectangleAdd" arcHeight="30.0" arcWidth="30.0" fill="#406bde" height="27.0" layoutX="959.0" layoutY="151.0" stroke="#f0f3f6" strokeType="INSIDE" width="106.0" />
+      <Text fill="WHITE" layoutX="991.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Paper">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="971.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/add(1).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="addPaperButton" layoutX="957.0" layoutY="154.0" mnemonicParsing="false" onAction="#addPaperAction" opacity="0.0" prefHeight="25.0" prefWidth="107.0" />
+      <Rectangle fx:id="recAddHeader" fill="#262468" height="28.0" layoutX="1127.0" layoutY="150.0" stroke="#262468" strokeType="INSIDE" width="241.0" />
+      <Text fx:id="addPaperText" fill="WHITE" layoutX="1140.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adding Paper">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Text>
+      <Pane fx:id="editPaperPane" layoutX="732.0" layoutY="811.0" onMouseClicked="#editExited" prefHeight="600.0" prefWidth="390.0" style="-fx-background-color: #262468;">
+         <children>
+            <Text fill="WHITE" layoutX="15.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit a file">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="16.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit a file description" wrappingWidth="172.5">
+               <font>
+                  <Font name="Arial" size="9.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="177.0" fitWidth="345.0" layoutX="19.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/upload.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="14.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Research Details">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill in all of the relevant information for research item. Do not leave anything blank." wrappingWidth="344.5">
+               <font>
+                  <Font name="Arial" size="9.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="24.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Research Title:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="24.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author/s:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="24.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year Published:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="24.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course/Program:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="24.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Research Doi:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="rTitleTF1" layoutX="125.0" layoutY="275.0" prefHeight="4.0" prefWidth="237.0" />
+            <TextField fx:id="rAuthorTF1" layoutX="125.0" layoutY="315.0" prefHeight="25.0" prefWidth="237.0" />
+            <TextField fx:id="rYearTF1" layoutX="125.0" layoutY="354.0" prefHeight="25.0" prefWidth="237.0" />
+            <TextField fx:id="rCourseTF1" layoutX="126.0" layoutY="394.0" prefHeight="25.0" prefWidth="237.0" />
+            <TextField fx:id="rDOITF1" layoutX="125.0" layoutY="435.0" prefHeight="25.0" prefWidth="237.0" />
+            <ImageView fitHeight="47.0" fitWidth="155.0" layoutX="16.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/White%20rectangle.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="161.0" layoutX="200.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Blue%20rectangle.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="70.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discard">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="265.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Save">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Label layoutX="126.0" layoutY="300.0" />
+            <Label fx:id="warninglabel11" layoutX="127.0" layoutY="295.0" opacity="0.5" prefHeight="17.0" prefWidth="221.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="8.0" />
+               </font>
+            </Label>
+            <Label fx:id="warninglabel21" layoutX="127.0" layoutY="335.0" opacity="0.5" prefHeight="17.0" prefWidth="221.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="8.0" />
+               </font>
+            </Label>
+            <Label fx:id="warninglabel31" layoutX="127.0" layoutY="374.0" opacity="0.5" prefHeight="17.0" prefWidth="221.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="8.0" />
+               </font>
+            </Label>
+            <Label fx:id="warninglabel41" layoutX="127.0" layoutY="414.0" opacity="0.5" prefHeight="17.0" prefWidth="221.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="8.0" />
+               </font>
+            </Label>
+            <Label fx:id="warninglabel51" layoutX="127.0" layoutY="455.0" opacity="0.5" prefHeight="17.0" prefWidth="221.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="8.0" />
+               </font>
+            </Label>
+            <Button fx:id="editSubmitButton" layoutX="199.0" layoutY="493.0" mnemonicParsing="false" onAction="#editSubmit" opacity="0.0" prefHeight="20.0" prefWidth="161.0">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Button>
+            <Button fx:id="editDiscardButton" layoutX="10.0" layoutY="489.0" mnemonicParsing="false" onAction="#editDiscard" opacity="0.0" prefHeight="26.0" prefWidth="173.0">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <Button fx:id="btAddPDF" layoutX="23.0" layoutY="63.0" mnemonicParsing="false" onAction="#onFileChooseButtonClicked" opacity="0.0" prefHeight="139.0" prefWidth="337.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="deletePane" layoutX="-408.0" layoutY="430.0" onMouseClicked="#deleteButtonExited" prefHeight="370.0" prefWidth="403.0" style="-fx-background-color: #262468;">
+         <children>
+            <Text fill="WHITE" layoutX="15.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete a File">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="16.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit a file description" wrappingWidth="172.5">
+               <font>
+                  <Font name="Arial" size="9.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Research Details">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete this research details" wrappingWidth="344.5">
+               <font>
+                  <Font name="Arial" size="9.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="24.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Research Title:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="24.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author/s:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="24.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year Published:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="24.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course/Program:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="24.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Research Doi:">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="28.0" fitWidth="142.0" layoutX="16.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/White%20rectangle.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="142.0" layoutX="178.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Blue%20rectangle.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="65.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discard">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="237.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Button fx:id="deleteButton" layoutX="178.0" layoutY="312.0" mnemonicParsing="false" onAction="#deleteButtonSubmit" opacity="0.0" prefHeight="20.0" prefWidth="141.0">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Button>
+            <Button fx:id="discardDelete" layoutX="17.0" layoutY="313.0" mnemonicParsing="false" opacity="0.0" prefHeight="19.0" prefWidth="141.0">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <Text fx:id="resTitleDe" fill="WHITE" layoutX="124.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="250.0">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="resAuthorDe" fill="WHITE" layoutX="124.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="resYearPubDe" fill="WHITE" layoutX="123.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="resCourseDe" fill="WHITE" layoutX="123.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="resDOIDe" fill="WHITE" layoutX="123.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Button fx:id="deleteButton9" layoutX="188.0" layoutY="322.0" mnemonicParsing="false" onAction="#deleteButtonSubmit" opacity="0.0" prefHeight="20.0" prefWidth="141.0">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Button layoutX="22.0" layoutY="27.0" mnemonicParsing="false" onAction="#home" opacity="0.0" prefHeight="70.0" prefWidth="153.0" text="HomeButton" />
+      <Button layoutX="1085.0" layoutY="47.0" mnemonicParsing="false" onAction="#logout" opacity="0.0" prefHeight="32.0" prefWidth="32.0" text="HomeButton" />
+      <Button layoutX="1050.0" layoutY="47.0" mnemonicParsing="false" onAction="#profile" opacity="0.0" prefHeight="32.0" prefWidth="32.0" text="HomeButton" />
+   </children>
+</Pane>

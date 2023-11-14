@@ -1,0 +1,21 @@
+/* CheckBox with custom hover and selected color for the box */
+.checkbox > .box {
+    -fx-background-color: white; /* Background color */
+    -fx-border-color: black; /* Border color */
+    -fx-border-width: 0.5px; /* Border width */
+}
+
+/* When the CheckBox is selected (checked) */
+.checkbox:selected > .box {
+    -fx-background-color: #406BDE; /* Custom background color when selected */
+    -fx-border-color: #406BDE; /* Custom border color when selected */
+    -fx-border-width: 0.5px; /* Border width when selected */
+
+}
+
+/* When the CheckBox is hovered */
+.checkbox:hover > .box {
+    -fx-background-color: #406BDE; /* Custom background color when hovered */
+    -fx-border-color: #406BDE; /* Custom border color when hovered */
+    -fx-border-width: 0.5px; /* Border width when hovered */
+}

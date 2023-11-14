@@ -1,0 +1,27 @@
+/* Default styles for child elements (Rectangle, Text, ImageView) */
+.rectangle {
+    -fx-fill: #ffffff; /* Default background color */
+    -fx-stroke: #000000; /* Default border color */
+}
+
+.pane .image-view {
+    -fx-image: url("/Images/id-card.png"); /* Default image path */
+    -fx-fit-width: 78.91px; /* Default image width */
+    -fx-fit-height: 78.91px; /* Default image height */
+}
+
+/* Change styles on hover of the parent Pane */
+.pane:hover .rectangle {
+    -fx-fill: #262648; /* Background color on hover */
+    -fx-stroke: #262648; /* Border color on hover */
+}
+
+.pane:hover .text {
+    -fx-fill: #ffffff; /* Text color on hover */
+}
+
+.pane:hover .image-view {
+    -fx-image: url("/Images/id-card%20(1).png"); /* Image path on hover */
+    -fx-fit-width: 78.91px; /* Image width on hover */
+    -fx-fit-height: 78.91px; /* Image height on hover */
+}
