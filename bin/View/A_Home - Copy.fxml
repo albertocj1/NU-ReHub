@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1124.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.A_HomeController">
+   <children>
+      <ImageView fx:id="nuimage" fitHeight="57.81" fitWidth="47.66" layoutX="25.0" layoutY="35.16">
+         <image>
+            <Image url="@../Images" />
+         </image>
+      </ImageView>
+      <Text fill="#262468" layoutX="79.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ReHub">
+         <font>
+            <Font name="Arial Bold" size="31.25" />
+         </font>
+      </Text>
+      <Text layoutX="33.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to your control center, Jane! ">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="homeimage" fitHeight="21.88" fitWidth="21.88" layoutX="35.0" layoutY="223.0">
+         <image>
+            <Image url="@../Images/home%20(1).png" />
+         </image>
+      </ImageView>
+      <Text fill="#262648" layoutX="66.0" layoutY="245.0" stroke="#262648" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="logoutimage" fitHeight="21.09" fitWidth="21.09" layoutX="1066.0" layoutY="58.0">
+         <image>
+            <Image url="@../Images/logout.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="profileimage" fitHeight="28.91" fitWidth="28.91" layoutX="1030.0" layoutY="53.0">
+         <image>
+            <Image url="@../Images/user.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="28.0" layoutY="285.0" prefHeight="210.0" prefWidth="338.0" styleClass="pane" stylesheets="@CSS/home_hover.css">
+         <children>
+            <Rectangle arcHeight="55.0" arcWidth="55.0" fill="WHITE" height="197.66" layoutX="4.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" styleClass="rectangle" width="338.28" />
+            <ImageView fx:id="internshipimage" fitHeight="78.91" fitWidth="78.91" layoutX="23.0" layoutY="16.0">
+               <image>
+                  <Image url="@../Images/id-card.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="111.0" layoutY="69.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Internship">
+               <font>
+                  <Font name="Arial Bold" size="31.25" />
+               </font>
+            </Text>
+            <Text layoutX="29.0" layoutY="111.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="A repository of internship experiences documented by students, encompassing their learnings, challenges, and contributions during their internship tenure." wrappingWidth="307.91665649414074">
+               <font>
+                  <Font name="Arial" size="15.62" />
+               </font>
+            </Text>
+            <Button fx:id="btInternship" layoutX="3.0" layoutY="2.0" mnemonicParsing="false" onAction="#clickInternshipPane" opacity="0.0" prefHeight="198.0" prefWidth="338.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="392.0" layoutY="280.0" prefHeight="215.0" prefWidth="343.0" styleClass="pane" stylesheets="@CSS/home_hover2.css">
+         <children>
+            <Rectangle arcHeight="55.0" arcWidth="55.0" fill="WHITE" height="197.66" layoutX="2.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" styleClass="rectangle" width="338.28" />
+            <ImageView fx:id="capstoneimage" fitHeight="72.66" fitWidth="72.66" layoutX="23.0" layoutY="27.0">
+               <image>
+                  <Image url="@../Images/mortarboard%20(1).png" />
+               </image>
+            </ImageView>
+            <Text layoutX="104.0" layoutY="70.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Capstone">
+               <font>
+                  <Font name="Arial Bold" size="31.25" />
+               </font>
+            </Text>
+            <Text layoutX="31.0" layoutY="116.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="A compilation of capstone projects undertaken by students, showcasing their culminating efforts in applying their acquired knowledge and skills to real-world problems." wrappingWidth="289.249969482422">
+               <font>
+                  <Font name="Arial" size="15.62" />
+               </font>
+            </Text>
+            <Button fx:id="btCapstone" layoutX="5.0" layoutY="4.0" mnemonicParsing="false" onAction="#clickCapstonePane" opacity="0.01" prefHeight="198.0" prefWidth="338.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="743.0" layoutY="290.0" prefHeight="203.0" prefWidth="353.0" styleClass="pane" stylesheets="@CSS/home_hover3.css">
+         <children>
+            <Rectangle arcHeight="55.0" arcWidth="55.0" fill="WHITE" height="197.66" layoutX="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" styleClass="rectangle" width="338.28" />
+            <ImageView fx:id="thesisimage" fitHeight="50.78" fitWidth="50.78" layoutX="41.0" layoutY="28.0">
+               <image>
+                  <Image url="@../Images/open-book(2).png" />
+               </image>
+            </ImageView>
+            <Text layoutX="105.0" layoutY="65.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Thesis">
+               <font>
+                  <Font name="Arial Bold" size="31.25" />
+               </font>
+            </Text>
+            <Text layoutX="41.0" layoutY="108.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="An archive of theses authored by students, representing their in-depth research and original contributions to their respective fields of study." wrappingWidth="277.9166564941408">
+               <font>
+                  <Font name="Arial" size="15.62" />
+               </font>
+            </Text>
+            <Button fx:id="btThesis" layoutX="12.0" layoutY="3.0" mnemonicParsing="false" onAction="#clickThesisPane" opacity="0.0" prefHeight="198.0" prefWidth="338.0" />
+         </children>
+      </Pane>
+      <Button layoutX="1064.0" layoutY="50.0" mnemonicParsing="false" onAction="#logout" opacity="0.0" prefHeight="32.0" prefWidth="32.0" text="HomeButton" />
+      <Button layoutX="1026.0" layoutY="50.0" mnemonicParsing="false" onAction="#profile" opacity="0.0" prefHeight="32.0" prefWidth="32.0" text="HomeButton" />
+   </children>
+</Pane>

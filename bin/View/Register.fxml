@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1124.0" style="-fx-background-color: 959595;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterController">
+   <children>
+      <ImageView fx:id="bgimage" fitHeight="813.0" fitWidth="1138.0" layoutX="-9.0" layoutY="-6.0">
+         <image>
+            <Image url="@../../../Images/background.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="813.0" layoutX="562.0" layoutY="-6.0" stroke="WHITE" strokeType="INSIDE" width="568.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00000080" height="813.0" layoutX="-12.0" layoutY="-5.0" stroke="#00000066" strokeType="INSIDE" width="574.0" />
+      <Text fill="#406bde" layoutX="611.0" layoutY="614.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="Arial Bold" size="15.63" />
+         </font>
+      </Text>
+      <Text layoutX="610.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register with ReHub ">
+         <font>
+            <Font name="Arial Bold" size="46.88" />
+         </font>
+      </Text>
+      <Text fill="#57595a" layoutX="643.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note: To Register, use NU email account and ID Number">
+         <font>
+            <Font name="Arial" size="15.63" />
+         </font>
+      </Text>
+      <Text fill="#406bde" layoutX="612.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font name="Arial Bold" size="15.63" />
+         </font>
+      </Text>
+      <TextField fx:id="nameTF" layoutX="612.0" layoutY="311.0" prefHeight="55.0" prefWidth="435.0" promptText="Enter First Name and Last Name" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 10; -fx-border-width: 0.5;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <Text fill="#406bde" layoutX="612.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID Number">
+         <font>
+            <Font name="Arial Bold" size="15.63" />
+         </font>
+      </Text>
+      <TextField fx:id="idTF" layoutX="612.0" layoutY="420.0" prefHeight="55.0" prefWidth="435.0" promptText="Enter ID Number" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 10; -fx-border-width: 0.5;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#406bde" height="55.0" layoutX="611.0" layoutY="713.0" stroke="#406bde" strokeType="INSIDE" width="435.0" />
+      <Text fill="WHITE" layoutX="774.0" layoutY="751.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register">
+         <font>
+            <Font name="Arial Bold" size="27.34" />
+         </font>
+      </Text>
+      <Button fx:id="gobackloginbtn" layoutX="610.0" layoutY="706.0" mnemonicParsing="false" onAction="#register" opacity="0.0" prefHeight="66.0" prefWidth="440.0" text="Button" />
+      <ImageView fx:id="noteimage" fitHeight="30.0" fitWidth="30.0" layoutX="611.0" layoutY="233.0">
+         <image>
+            <Image url="@../../../Images/info.png" />
+         </image>
+      </ImageView>
+      <Text fill="#406bde" layoutX="611.0" layoutY="513.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address">
+         <font>
+            <Font name="Arial Bold" size="15.63" />
+         </font>
+      </Text>
+      <TextField fx:id="emailTF" layoutX="611.0" layoutY="525.0" prefHeight="55.0" prefWidth="435.0" promptText="Enter NU Email Address" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 10; -fx-border-width: 0.5;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="nuimage" fitHeight="119.0" fitWidth="128.0" layoutX="23.0" layoutY="44.0">
+         <image>
+            <Image url="@../../../Images/nu%20white%20logo.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="37.0" layoutY="706.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dive into a world of knowledge: Your gateway to a curated collection of research papers, making exploration as easy as a tap!" wrappingWidth="480.26263427734375">
+         <font>
+            <Font name="Arial" size="23.44" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="39.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ReHub">
+         <font>
+            <Font name="Arial Bold" size="78.13" />
+         </font>
+      </Text>
+      <PasswordField fx:id="passwordPF" layoutX="611.0" layoutY="622.0" prefHeight="55.0" prefWidth="435.0" promptText="Enter Password" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 10; -fx-border-width: 0.5;">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="warninglabel1" layoutX="625.0" layoutY="366.0" prefHeight="17.0" prefWidth="416.0" textFill="#797979" visible="false">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="warninglabel2" layoutX="622.0" layoutY="475.0" prefHeight="17.0" prefWidth="416.0" textFill="#797979" visible="false">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="warninglabel3" layoutX="621.0" layoutY="580.0" prefHeight="17.0" prefWidth="416.0" textFill="#797979" visible="false">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="warninglabel4" layoutX="621.0" layoutY="676.0" prefHeight="17.0" prefWidth="416.0" textFill="#797979" visible="false">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

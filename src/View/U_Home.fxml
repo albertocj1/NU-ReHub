@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1124.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.U_HomeController">
+   <children>
+      <ImageView fx:id="nuimage" fitHeight="57.76" fitWidth="47.61" layoutX="24.98" layoutY="35.13">
+         <image>
+            <Image url="@../../../Images/nu_logo.png" />
+         </image>
+      </ImageView>
+      <Text fill="#262468" layoutX="77.27" layoutY="72.39" strokeType="OUTSIDE" strokeWidth="0.0" text="ReHub">
+         <font>
+            <Font name="Arial Bold" size="31.22" />
+         </font>
+      </Text>
+      <ImageView fx:id="logoutimage" fitHeight="21.08" fitWidth="21.08" layoutX="1089.66" layoutY="53.64">
+         <image>
+            <Image url="@../../../Images/logout.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="profileimage" fitHeight="28.88" fitWidth="28.88" layoutX="1052.0" layoutY="49.0">
+         <image>
+            <Image url="@../../../Images/user.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="28.88" layoutY="143.69" strokeType="OUTSIDE" strokeWidth="0.0" text="BROWSE  LIBRARY">
+         <font>
+            <Font name="Arial Bold" size="15.61" />
+         </font>
+      </Text>
+      <Rectangle fill="#f0f3f6" height="687.0" layoutX="215.0" layoutY="113.0" stroke="#f0f3f6" strokeType="INSIDE" width="909.0" />
+      <Label layoutX="245.0" layoutY="124.00999999999999" prefWidth="151.0" text="Welcome!">
+         <font>
+            <Font name="Arial Bold" size="31.22" />
+         </font>
+      </Label>
+      <Text fill="#262648" layoutX="61.66" layoutY="192.06" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
+         <font>
+            <Font name="Arial Bold" size="15.61" />
+         </font>
+      </Text>
+      <ImageView fx:id="homeimage" fitHeight="21.86" fitWidth="21.86" layoutX="28.88" layoutY="174.06">
+         <image>
+            <Image url="@../../../Images/home%20(1).png" />
+         </image>
+      </ImageView>
+      <Text fill="#959595" layoutX="61.44" layoutY="230.97" strokeType="OUTSIDE" strokeWidth="0.0" text="Discover">
+         <font>
+            <Font name="Arial" size="15.61" />
+         </font>
+      </Text>
+      <ImageView fx:id="discoverimage" fitHeight="19.51" fitWidth="19.51" layoutX="29.54" layoutY="214.78" rotate="-45.0">
+         <image>
+            <Image url="@../../../Images/hand.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="exploreimage" fitHeight="18.73" fitWidth="18.73" layoutX="32.0" layoutY="246.97">
+         <image>
+            <Image url="@../../../Images/folder%20(1).png" />
+         </image>
+      </ImageView>
+      <Text fill="#959595" layoutX="61.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Explore Genres">
+         <font>
+            <Font name="Arial" size="15.61" />
+         </font>
+      </Text>
+      <Text layoutX="28.88" layoutY="332.52" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR  LIBRARY">
+         <font>
+            <Font name="Arial Bold" size="15.61" />
+         </font>
+      </Text>
+      <ImageView fx:id="favoriteimage" fitHeight="19.51" fitWidth="19.51" layoutX="31.340000000000003" layoutY="355.27">
+         <image>
+            <Image url="@../../../Images/saved.png" />
+         </image>
+      </ImageView>
+      <Text fill="#959595" layoutX="61.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Favorites">
+         <font>
+            <Font name="Arial" size="15.61" />
+         </font>
+      </Text>
+      <ImageView fx:id="historyimage" fitHeight="17.17" fitWidth="17.17" layoutX="32.13" layoutY="393.28">
+         <image>
+            <Image url="@../../../Images/history.png" />
+         </image>
+      </ImageView>
+      <Text fill="#959595" layoutX="61.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="History">
+         <font>
+            <Font name="Arial" size="15.61" />
+         </font>
+      </Text>
+      <Text layoutX="28.0" layoutY="750.89" strokeType="OUTSIDE" strokeWidth="0.0" text="About ReHub">
+         <font>
+            <Font name="Arial Bold" size="11.17" />
+         </font>
+      </Text>
+      <Text layoutX="27.0" layoutY="769.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Us">
+         <font>
+            <Font name="Arial Bold" size="11.17" />
+         </font>
+      </Text>
+      <ImageView fitHeight="127.23" fitWidth="869.54" layoutX="234.95" layoutY="171.72">
+         <image>
+            <Image url="@../Images/home_bg.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle fill="#00000080" height="127.23" layoutX="234.95" layoutY="171.72" stroke="#00000080" strokeType="INSIDE" width="869.54" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="206.85" layoutX="234.95" layoutY="320.03" stroke="WHITE" strokeType="INSIDE" width="869.54" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="234.95" layoutX="234.95" layoutY="547.17" stroke="WHITE" strokeType="INSIDE" width="869.54" />
+      <Label layoutX="245.09" layoutY="330.17" text="Latest Reads">
+         <font>
+            <Font name="Arial Bold" size="18.73" />
+         </font>
+      </Label>
+      <Label layoutX="245.31" layoutY="564.06" text="Trending in the Community">
+         <font>
+            <Font name="Arial Bold" size="18.73" />
+         </font>
+      </Label>
+      <Pane layoutX="244.0" layoutY="362.0" prefHeight="154.0" prefWidth="277.0">
+         <children>
+            <Group layoutX="1.0">
+               <children>
+                  <Rectangle arcHeight="21.71" arcWidth="21.71" fill="WHITE" height="151.0" stroke="WHITE" strokeType="INSIDE" width="277.0" />
+                  <Label fx:id="rTitle1" layoutX="103.0" layoutY="16.0" prefHeight="16.0" prefWidth="175.0" text="Title">
+                     <font>
+                        <Font name="Arial Bold" size="14.05" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rAuthor1" layoutX="103.0" layoutY="36.0" text="Author">
+                     <font>
+                        <Font name="Arial" size="11.71" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rYear1" layoutX="240.0" layoutY="36.0" text="Year">
+                     <font>
+                        <Font name="Arial" size="11.71" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="bookmarkimage" fitHeight="10.93" fitWidth="10.93" layoutX="253.239990234375" layoutY="53.089996337890625">
+                     <image>
+                        <Image url="@../Images/saved.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="-1.0" />
+                     </effect>
+                  </ImageView>
+                  <Text layoutX="103.0" layoutY="76.22369384765625" lineSpacing="0.05" strokeType="OUTSIDE" strokeWidth="0.0" text="Based on evidence that coal miners have elevated gastric cancer mortality rates, a case-control study was developed to assess the gastric cancer risk of coal mine dust exposure." wrappingWidth="163.9199981689453">
+                     <font>
+                        <Font name="Arial" size="8.59" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="tagimage" fitHeight="9.37" fitWidth="9.37" layoutX="174.0" layoutY="123.0">
+                     <image>
+                        <Image url="@../Images/tag%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="rImage1" fitHeight="116.0" fitWidth="82.0" layoutX="12.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow height="10.0" radius="4.5" width="10.0" />
+                     </effect>
+                  </ImageView>
+                  <Label fx:id="rType1" layoutX="188.0" layoutY="120.0" prefHeight="15.0" prefWidth="96.0" text="Type">
+                     <font>
+                        <Font name="Arial" size="11.71" />
+                     </font>
+                  </Label>
+                  <Button fx:id="read1" mnemonicParsing="false" onAction="#readClicked" prefHeight="152.0" prefWidth="286.0" styleClass="transparent-button" stylesheets="@CSS/home_button.css" />
+                  <Label fx:id="rDoi1" layoutX="106.0" layoutY="124.0" opacity="0.0" text="Label" />
+               </children>
+            </Group>
+         </children>
+      </Pane>
+      <Pane layoutX="532.0" layoutY="362.0" prefHeight="154.0" prefWidth="277.0">
+         <children>
+            <Group layoutX="-1.0">
+               <children>
+                  <Rectangle arcHeight="21.71" arcWidth="21.71" fill="WHITE" height="151.0" stroke="WHITE" strokeType="INSIDE" width="277.0" />
+                  <ImageView fx:id="rImage2" fitHeight="116.0" fitWidth="82.0" layoutX="13.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow height="10.0" radius="4.5" width="10.0" />
+                     </effect>
+                  </ImageView>
+                  <Label fx:id="rTitle2" layoutX="110.0" layoutY="11.0" prefHeight="16.0" prefWidth="175.0" text="Title">
+                     <font>
+                        <Font name="Arial Bold" size="14.05" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rAuthor2" layoutX="110.0" layoutY="31.0" text="Author">
+                     <font>
+                        <Font name="Arial" size="11.71" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rYear2" layoutX="245.0" layoutY="31.0" text="Year">
+                     <font>
+                        <Font name="Arial" size="11.71" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="bookmarkimage1" fitHeight="10.93" fitWidth="10.93" layoutX="261.0" layoutY="48.0">
+                     <image>
+                        <Image url="@../Images/saved.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="-1.0" />
+                     </effect>
+                  </ImageView>
+                  <Text layoutX="110.0" layoutY="72.0" lineSpacing="0.05" strokeType="OUTSIDE" strokeWidth="0.0" text="Based on evidence that coal miners have elevated gastric cancer mortality rates, a case-control study was developed to assess the gastric cancer risk of coal mine dust exposure." wrappingWidth="163.9199981689453">
+                     <font>
+                        <Font name="Arial" size="8.59" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="tagimage1" fitHeight="9.37" fitWidth="9.37" layoutX="152.0" layoutY="118.0">
+                     <image>
+                        <Image url="@../Images/tag%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="rType2" layoutX="166.0" layoutY="115.0" prefHeight="15.0" prefWidth="119.0" text="Type">
+                     <font>
+                        <Font name="Arial" size="11.71" />
+                     </font>
+                  </Label>
+                  <Button fx:id="read2" layoutY="-1.0" mnemonicParsing="false" onAction="#readClicked" prefHeight="152.0" prefWidth="286.0" styleClass="transparent-button" stylesheets="@CSS/home_button.css" />
+                  <Label fx:id="rDoi2" layoutX="110.0" layoutY="119.0" opacity="0.0" text="Label" />
+               </children>
+            </Group>
+         </children>
+      </Pane>
+      <Label layoutX="247.66" layoutY="592.19" text="Data Science">
+         <font>
+            <Font name="Arial Bold" size="12.5" />
+         </font>
+      </Label>
+      <Label layoutX="304.0" layoutY="176.0" prefHeight="80.0" prefWidth="468.0" text="Your gateway to knowledge" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="31.22" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="305.0" layoutY="206.0" prefHeight="80.0" prefWidth="468.0" text="and innovation" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="31.22" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#406bde" height="31.0" layoutX="825.0" layoutY="219.0" stroke="#406bde" strokeType="INSIDE" width="121.0" />
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="30.72" layoutX="975.0" layoutY="219.0" stroke="#406bde" strokeType="INSIDE" strokeWidth="2.0" width="121.0" />
+      <Label layoutX="861.0" layoutY="226.0" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="14.05" />
+         </font>
+      </Label>
+      <Label layoutX="1012.0" layoutY="226.0" text="Explore" textFill="#406bde">
+         <font>
+            <Font name="Arial Bold" size="14.05" />
+         </font>
+      </Label>
+      <Button fx:id="discover" layoutX="25.0" layoutY="209.0" mnemonicParsing="false" onAction="#discover" opacity="0.0" prefHeight="29.0" prefWidth="107.0" text="Button" />
+      <Button fx:id="explore" layoutX="28.0" layoutY="243.0" mnemonicParsing="false" onAction="#explore" opacity="0.0" prefHeight="29.0" prefWidth="151.0" text="Button" />
+      <Button fx:id="favorite" layoutX="27.0" layoutY="350.0" mnemonicParsing="false" onAction="#favorite" opacity="0.0" prefHeight="29.0" prefWidth="105.0" text="Button" />
+      <Button fx:id="history" layoutX="27.0" layoutY="385.0" mnemonicParsing="false" onAction="#history" opacity="0.0" prefHeight="29.0" prefWidth="105.0" text="Button" />
+      <Button fx:id="search" layoutX="823.0" layoutY="218.0" mnemonicParsing="false" onAction="#discover" opacity="0.0" prefHeight="33.0" prefWidth="123.0" text="Button" />
+      <Button fx:id="explore1" layoutX="974.0" layoutY="217.0" mnemonicParsing="false" onAction="#explore" opacity="0.0" prefHeight="33.0" prefWidth="123.0" text="Button" />
+      <Button fx:id="profile" layoutX="1052.0" layoutY="47.0" mnemonicParsing="false" onAction="#profile" opacity="0.0" prefHeight="33.0" prefWidth="29.0" text="Button" />
+      <Button fx:id="logout" layoutX="1087.0" layoutY="47.0" mnemonicParsing="false" onAction="#logout" opacity="0.0" prefHeight="33.0" prefWidth="26.0" text="Button" />
+      <Button fx:id="about" layoutX="24.0" layoutY="726.0" mnemonicParsing="false" onAction="#about" opacity="0.0" prefHeight="28.0" prefWidth="79.0" text="Button" />
+      <Button fx:id="contact" layoutX="25.0" layoutY="758.0" mnemonicParsing="false" onAction="#contact" opacity="0.0" prefHeight="25.0" prefWidth="66.0" text="Button" />
+      <Group layoutX="815.0" layoutY="356.0">
+         <children>
+            <Rectangle arcHeight="21.71" arcWidth="21.71" fill="WHITE" height="151.0" layoutX="3.0" stroke="WHITE" strokeType="INSIDE" width="277.0" />
+            <Label fx:id="rTitle3" layoutX="103.0" layoutY="16.0" prefHeight="16.0" prefWidth="175.0" text="Title">
+               <font>
+                  <Font name="Arial Bold" size="14.05" />
+               </font>
+            </Label>
+            <Label fx:id="rAuthor3" layoutX="103.0" layoutY="36.0" text="Author">
+               <font>
+                  <Font name="Arial" size="11.71" />
+               </font>
+            </Label>
+            <Label fx:id="rYear3" layoutX="239.0" layoutY="36.0" text="Year">
+               <font>
+                  <Font name="Arial" size="11.71" />
+               </font>
+            </Label>
+            <ImageView fx:id="bookmarkimage2" fitHeight="10.93" fitWidth="10.93" layoutX="253.239990234375" layoutY="53.089996337890625">
+               <image>
+                  <Image url="@../Images/saved.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-1.0" />
+               </effect>
+            </ImageView>
+            <Text layoutX="103.0" layoutY="76.22369384765625" lineSpacing="0.05" strokeType="OUTSIDE" strokeWidth="0.0" text="Based on evidence that coal miners have elevated gastric cancer mortality rates, a case-control study was developed to assess the gastric cancer risk of coal mine dust exposure." wrappingWidth="163.9199981689453">
+               <font>
+                  <Font name="Arial" size="8.59" />
+               </font>
+            </Text>
+            <ImageView fx:id="tagimage2" fitHeight="9.37" fitWidth="9.37" layoutX="174.0" layoutY="123.0">
+               <image>
+                  <Image url="@../Images/tag%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rImage3" fitHeight="116.0" fitWidth="82.0" layoutX="12.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </ImageView>
+            <Label fx:id="rType3" layoutX="188.0" layoutY="120.0" prefHeight="15.0" prefWidth="96.0" text="Type">
+               <font>
+                  <Font name="Arial" size="11.71" />
+               </font>
+            </Label>
+            <Button fx:id="read3" layoutX="-2.0" layoutY="-1.0" mnemonicParsing="false" onAction="#readClicked" prefHeight="152.0" prefWidth="286.0" styleClass="transparent-button" stylesheets="@CSS/home_button.css" />
+            <Label fx:id="rDoi3" layoutX="106.0" layoutY="124.0" opacity="0.0" text="Label" />
+         </children>
+      </Group>
+      <Group layoutX="243.0" layoutY="622.0">
+         <children>
+            <Rectangle arcHeight="21.71" arcWidth="21.71" fill="WHITE" height="151.0" stroke="WHITE" strokeType="INSIDE" width="277.0" />
+            <Label fx:id="dataTitle1" layoutX="103.0" layoutY="16.0" prefHeight="16.0" prefWidth="175.0" text="Title">
+               <font>
+                  <Font name="Arial Bold" size="14.05" />
+               </font>
+            </Label>
+            <Label fx:id="dataAuthor1" layoutX="103.0" layoutY="36.0" text="Author">
+               <font>
+                  <Font name="Arial" size="11.71" />
+               </font>
+            </Label>
+            <Label fx:id="dataYear1" layoutX="239.0" layoutY="36.0" text="Year">
+               <font>
+                  <Font name="Arial" size="11.71" />
+               </font>
+            </Label>
+            <ImageView fx:id="bookmarkimage31" fitHeight="10.93" fitWidth="10.93" layoutX="253.239990234375" layoutY="53.089996337890625">
+               <image>
+                  <Image url="@../Images/saved.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-1.0" />
+               </effect>
+            </ImageView>
+            <Text layoutX="103.0" layoutY="76.22369384765625" lineSpacing="0.05" strokeType="OUTSIDE" strokeWidth="0.0" text="Based on evidence that coal miners have elevated gastric cancer mortality rates, a case-control study was developed to assess the gastric cancer risk of coal mine dust exposure." wrappingWidth="163.9199981689453">
+               <font>
+                  <Font name="Arial" size="8.59" />
+               </font>
+            </Text>
+            <ImageView fx:id="tagimage31" fitHeight="9.37" fitWidth="9.37" layoutX="174.0" layoutY="123.0">
+               <image>
+                  <Image url="@../Images/tag%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dataImage1" fitHeight="116.0" fitWidth="82.0" layoutX="12.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </ImageView>
+            <Label fx:id="dataType1" layoutX="188.0" layoutY="120.0" prefHeight="15.0" prefWidth="96.0" text="Type">
+               <font>
+                  <Font name="Arial" size="11.71" />
+               </font>
+            </Label>
+            <Button fx:id="read4" mnemonicParsing="false" onAction="#readClicked" prefHeight="152.0" prefWidth="286.0" styleClass="transparent-button" stylesheets="@CSS/home_button.css" />
+            <Label fx:id="dataDoi1" layoutX="106.0" layoutY="119.0" opacity="0.0" text="Label" />
+         </children>
+      </Group>
+      <Group layoutX="531.0" layoutY="619.0">
+         <children>
+            <Rectangle arcHeight="21.71" arcWidth="21.71" fill="WHITE" height="151.0" stroke="WHITE" strokeType="INSIDE" width="277.0" />
+            <Label fx:id="dataTitle2" layoutX="103.0" layoutY="16.0" prefHeight="16.0" prefWidth="175.0" text="Title">
+               <font>
+                  <Font name="Arial Bold" size="14.05" />
+               </font>
+            </Label>
+            <Label fx:id="dataAuthor2" layoutX="103.0" layoutY="36.0" text="Author">
+               <font>
+                  <Font name="Arial" size="11.71" />
+               </font>
+            </Label>
+            <Label fx:id="dataYear2" layoutX="239.0" layoutY="36.0" text="Year">
+               <font>
+                  <Font name="Arial" size="11.71" />
+               </font>
+            </Label>
+            <ImageView fx:id="bookmarkimage311" fitHeight="10.93" fitWidth="10.93" layoutX="253.239990234375" layoutY="53.089996337890625">
+               <image>
+                  <Image url="@../Images/saved.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-1.0" />
+               </effect>
+            </ImageView>
+            <Text layoutX="103.0" layoutY="76.22369384765625" lineSpacing="0.05" strokeType="OUTSIDE" strokeWidth="0.0" text="Based on evidence that coal miners have elevated gastric cancer mortality rates, a case-control study was developed to assess the gastric cancer risk of coal mine dust exposure." wrappingWidth="163.9199981689453">
+               <font>
+                  <Font name="Arial" size="8.59" />
+               </font>
+            </Text>
+            <ImageView fx:id="tagimage311" fitHeight="9.37" fitWidth="9.37" layoutX="174.0" layoutY="123.0">
+               <image>
+                  <Image url="@../Images/tag%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dataImage2" fitHeight="116.0" fitWidth="82.0" layoutX="12.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </ImageView>
+            <Label fx:id="dataType2" layoutX="188.0" layoutY="120.0" prefHeight="15.0" prefWidth="96.0" text="Type">
+               <font>
+                  <Font name="Arial" size="11.71" />
+               </font>
+            </Label>
+            <Button fx:id="read5" layoutY="1.0" mnemonicParsing="false" onAction="#readClicked" prefHeight="152.0" prefWidth="286.0" styleClass="transparent-button" stylesheets="@CSS/home_button.css" />
+            <Label fx:id="dataDoi2" layoutX="106.0" layoutY="124.0" opacity="0.0" text="Label" />
+         </children>
+      </Group>
+      <Group layoutX="814.0" layoutY="617.0">
+         <children>
+            <Rectangle arcHeight="21.71" arcWidth="21.71" fill="WHITE" height="151.0" layoutX="8.0" stroke="WHITE" strokeType="INSIDE" width="277.0" />
+            <Label fx:id="dataTitle3" layoutX="103.0" layoutY="16.0" prefHeight="16.0" prefWidth="175.0" text="Title">
+               <font>
+                  <Font name="Arial Bold" size="14.05" />
+               </font>
+            </Label>
+            <Label fx:id="dataAuthor3" layoutX="103.0" layoutY="36.0" text="Author">
+               <font>
+                  <Font name="Arial" size="11.71" />
+               </font>
+            </Label>
+            <Label fx:id="dataYear3" layoutX="238.0" layoutY="36.0" text="Year">
+               <font>
+                  <Font name="Arial" size="11.71" />
+               </font>
+            </Label>
+            <ImageView fx:id="bookmark" fitHeight="10.93" fitWidth="10.93" layoutX="253.239990234375" layoutY="53.089996337890625">
+               <image>
+                  <Image url="@../Images/saved.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-1.0" />
+               </effect>
+            </ImageView>
+            <Text fx:id="caption" layoutX="103.0" layoutY="76.22369384765625" lineSpacing="0.05" strokeType="OUTSIDE" strokeWidth="0.0" text="Based on evidence that coal miners have elevated gastric cancer mortality rates, a case-control study was developed to assess the gastric cancer risk of coal mine dust exposure." wrappingWidth="163.9199981689453">
+               <font>
+                  <Font name="Arial" size="8.59" />
+               </font>
+            </Text>
+            <ImageView fx:id="tag" fitHeight="9.37" fitWidth="9.37" layoutX="174.0" layoutY="123.0">
+               <image>
+                  <Image url="@../Images/tag%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dataImage3" fitHeight="116.0" fitWidth="82.0" layoutX="12.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </ImageView>
+            <Label fx:id="dataType3" layoutX="188.0" layoutY="120.0" prefHeight="15.0" prefWidth="96.0" text="Type">
+               <font>
+                  <Font name="Arial" size="11.71" />
+               </font>
+            </Label>
+            <Button fx:id="read6" layoutX="6.0" layoutY="-1.0" mnemonicParsing="false" onAction="#readClicked" prefHeight="152.0" prefWidth="279.0" styleClass="transparent-button" stylesheets="@CSS/home_button.css" />
+            <Label fx:id="dataDoi3" layoutX="103.0" layoutY="119.0" opacity="0.0" text="Label" />
+         </children>
+      </Group>
+      <Button fx:id="dsbtn" layoutX="248.0" layoutY="587.0" mnemonicParsing="false" onAction="#dsbtnClicked" prefHeight="24.0" prefWidth="88.0" style="-fx-background-color: #ffffff;" styleClass="hoverstyle" stylesheets="@CSS/hover.css" text="Data Science" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="mlbtn" layoutX="346.0" layoutY="588.0" mnemonicParsing="false" onAction="#mlbtnClicked" prefHeight="22.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" styleClass="hoverstyle" stylesheets="@CSS/hover.css" text="Machine Learning">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="cyberbtn" layoutX="461.0" layoutY="588.0" mnemonicParsing="false" onAction="#cyberbtnClicked" prefHeight="22.0" prefWidth="99.0" style="-fx-background-color: #ffffff;" styleClass="hoverstyle" stylesheets="@CSS/hover.css" text="Cybersecurity">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="webbtn" layoutX="565.0" layoutY="587.0" mnemonicParsing="false" onAction="#webbtnClicked" prefHeight="22.0" prefWidth="115.0" style="-fx-background-color: #ffffff;" styleClass="hoverstyle" stylesheets="@CSS/hover.css" text="Web Development">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="gamebtn" layoutX="685.0" layoutY="587.0" mnemonicParsing="false" onAction="#gamebtnClicked" prefHeight="22.0" prefWidth="123.0" style="-fx-background-color: #ffffff;" styleClass="hoverstyle" stylesheets="@CSS/hover.css" text="Game Development">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Button>
+      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="91.0" layoutX="903.0" layoutY="660.0" stroke="WHITE" strokeType="INSIDE" visible="false" width="176.0" />
+      <Pane fx:id="paneRead" layoutX="809.0" layoutY="113.0" prefHeight="687.0" prefWidth="317.0" style="-fx-background-color: #262468;" visible="false">
+         <children>
+            <Label fx:id="titleRead" layoutX="15.0" layoutY="10.0" prefHeight="80.0" prefWidth="290.0" text="Title" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imageRead" fitHeight="325.0" fitWidth="246.0" layoutX="35.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="authorRead" layoutX="40.0" layoutY="425.0" prefHeight="22.0" prefWidth="164.0" text="Author" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="yearRead" layoutX="239.0" layoutY="425.0" prefHeight="22.0" prefWidth="37.0" text="Year" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#1f93ff00" height="37.0" layoutX="88.0" layoutY="464.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="140.0" />
+            <Label layoutX="14.0" layoutY="503.0" prefHeight="87.0" prefWidth="301.0" text="Based on evidence that coal miners have elevated gastric cancer &#10;mortality rates, a case-control study was developed to assess &#10;the gastric cancer risk of coal mine dust exposure. Forty-six &#10;cases of US white male gastric cancer deaths from NIOSH coal &#10;miner cohorts were individually matched by age to controls. &#10;&#10;&#10;" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="10.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#406dde" height="41.0" layoutX="17.0" layoutY="601.0" stroke="#406bde" strokeType="INSIDE" strokeWidth="2.0" width="289.0">
+               <effect>
+                  <DropShadow color="#406bde" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </Rectangle>
+            <Label layoutX="91.0" layoutY="611.0" prefHeight="22.0" prefWidth="155.0" text="Continue Reading" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="471.0" prefHeight="22.0" prefWidth="88.0" text="Add to Favorites" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="11.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="23.0" fitWidth="26.0" layoutX="97.0" layoutY="471.0">
+               <image>
+                  <Image url="@../Images/saved(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="9.0" fitWidth="9.0" layoutX="295.0" layoutY="10.0">
+               <image>
+                  <Image url="@../Images/close.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+            <Button fx:id="ekis" layoutX="287.0" layoutY="3.0" mnemonicParsing="false" onAction="#ekis" opacity="0.0" prefHeight="25.0" prefWidth="22.0" text="Button">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </Button>
+            <Button layoutX="26.0" layoutY="603.0" mnemonicParsing="false" onAction="#contread" opacity="0.0" prefHeight="37.0" prefWidth="277.0" text="Button" />
+            <Label fx:id="doiRead" layoutX="35.0" layoutY="493.0" opacity="0.0" text="Label" />
+            <Button fx:id="favbtn" layoutX="84.0" layoutY="464.0" mnemonicParsing="false" onAction="#addtoFav" opacity="0.0" prefHeight="37.0" prefWidth="148.0" text="Button" />
+         </children></Pane>
+   </children>
+</Pane>

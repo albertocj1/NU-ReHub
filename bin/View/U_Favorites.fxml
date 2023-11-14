@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1124.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.U_FavoritesController">
+   <children>
+      <ImageView fitHeight="57.76" fitWidth="47.61" layoutX="24.98" layoutY="35.13">
+         <image>
+            <Image url="@../Images/nu_logo.png" />
+         </image>
+      </ImageView>
+      <Text fill="#262468" layoutX="77.27" layoutY="72.39" strokeType="OUTSIDE" strokeWidth="0.0" text="ReHub">
+         <font>
+            <Font name="Arial Bold" size="31.22" />
+         </font>
+      </Text>
+      <ImageView fitHeight="21.08" fitWidth="21.08" layoutX="1089.66" layoutY="53.64">
+         <image>
+            <Image url="@../Images/logout.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.88" fitWidth="28.88" layoutX="1052.0" layoutY="49.0">
+         <image>
+            <Image url="@../Images/user.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="28.88" layoutY="143.69" strokeType="OUTSIDE" strokeWidth="0.0" text="BROWSE  LIBRARY">
+         <font>
+            <Font name="Arial Bold" size="15.61" />
+         </font>
+      </Text>
+      <Rectangle fill="#f0f3f6" height="669.0" layoutX="215.0" layoutY="125.0" stroke="#f0f3f6" strokeType="INSIDE" width="909.0" />
+      <Text fill="#959595" layoutX="61.66" layoutY="192.06" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
+         <font>
+            <Font name="Arial" size="15.61" />
+         </font>
+      </Text>
+      <ImageView fitHeight="21.86" fitWidth="21.86" layoutX="28.88" layoutY="174.06">
+         <image>
+            <Image url="@../Images/home(1).png" />
+         </image>
+      </ImageView>
+      <Text fill="#959595" layoutX="61.44" layoutY="230.97" strokeType="OUTSIDE" strokeWidth="0.0" text="Discover">
+         <font>
+            <Font name="Arial" size="15.61" />
+         </font>
+      </Text>
+      <ImageView fitHeight="19.51" fitWidth="19.51" layoutX="29.54" layoutY="214.78" rotate="-45.0">
+         <image>
+            <Image url="@../Images/hand.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.73" fitWidth="18.73" layoutX="32.0" layoutY="246.97">
+         <image>
+            <Image url="@../Images/folder%20(1).png" />
+         </image>
+      </ImageView>
+      <Text fill="#959595" layoutX="61.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Explore Genres">
+         <font>
+            <Font name="Arial" size="15.61" />
+         </font>
+      </Text>
+      <Text layoutX="28.88" layoutY="332.52" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR  LIBRARY">
+         <font>
+            <Font name="Arial Bold" size="15.61" />
+         </font>
+      </Text>
+      <ImageView fitHeight="19.51" fitWidth="19.51" layoutX="31.340000000000003" layoutY="355.27">
+         <image>
+            <Image url="@../Images/save-instagram.png" />
+         </image>
+      </ImageView>
+      <Text fill="#262648" layoutX="61.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Favorites">
+         <font>
+            <Font name="Arial Bold" size="15.61" />
+         </font>
+      </Text>
+      <ImageView fitHeight="17.17" fitWidth="17.17" layoutX="32.13" layoutY="393.28">
+         <image>
+            <Image url="@../Images/history.png" />
+         </image>
+      </ImageView>
+      <Text fill="#959595" layoutX="61.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="History">
+         <font>
+            <Font name="Arial" size="15.61" />
+         </font>
+      </Text>
+      <Text layoutX="28.0" layoutY="750.89" strokeType="OUTSIDE" strokeWidth="0.0" text="About ReHub">
+         <font>
+            <Font name="Arial Bold" size="11.17" />
+         </font>
+      </Text>
+      <Text layoutX="27.0" layoutY="769.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Us">
+         <font>
+            <Font name="Arial Bold" size="11.17" />
+         </font>
+      </Text>
+      <Pane fx:id="pane1" layoutX="241.0" layoutY="166.0">
+         <children>
+            <ImageView fx:id="pic1" fitHeight="149.0" fitWidth="108.0" layoutX="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/ML,Intern,2020.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="title1" fill="#35408e" layoutX="25.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Intake in Response to Food-Cue" textAlignment="CENTER" wrappingWidth="133.65399169921852">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="author1" layoutX="12.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J Larsen, K Man">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Text>
+            <Ellipse fill="#030303" layoutX="102.0" layoutY="223.0" radiusX="3.0" radiusY="3.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text fx:id="date1" layoutX="116.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="June 2022">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="12.0" fitWidth="17.0" layoutX="6.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/tag%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="15.0" fitWidth="17.0" layoutX="165.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/save-instagram.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn1" layoutX="12.0" layoutY="8.0" mnemonicParsing="false" onAction="#read" opacity="0.0" prefHeight="149.0" prefWidth="174.0" text="Button" />
+            <Text fx:id="genre1" layoutX="29.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Science">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="pane2" layoutX="461.0" layoutY="166.0" prefHeight="260.0" prefWidth="181.0">
+         <children>
+            <ImageView fx:id="pic2" fitHeight="149.0" fitWidth="108.0" layoutX="45.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/ML,Intern,2020.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="title2" fill="#35408e" layoutX="31.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Intake in Response to Food-Cue" textAlignment="CENTER" wrappingWidth="133.65399169921852">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="author2" layoutX="18.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J Larsen, K Man">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Text>
+            <Ellipse fill="#030303" layoutX="110.0" layoutY="226.0" radiusX="3.0" radiusY="3.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text fx:id="date2" layoutX="129.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="June 2022">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="15.0" fitWidth="17.0" layoutX="166.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/save-instagram.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn2" layoutX="4.0" layoutY="7.0" mnemonicParsing="false" onAction="#read" opacity="0.0" prefHeight="150.0" prefWidth="174.0" text="Button" />
+            <ImageView fitHeight="12.0" fitWidth="17.0" layoutX="19.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/tag%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="pane3" layoutX="711.0" layoutY="171.0">
+         <children>
+            <Text fx:id="title3" fill="#35408e" layoutX="25.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Intake in Response to Food-Cue" textAlignment="CENTER" wrappingWidth="133.65399169921852">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="author3" layoutX="8.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J Larsen, K Man">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Text>
+            <Ellipse fill="#030303" layoutX="103.0" layoutY="223.0" radiusX="3.0" radiusY="3.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text fx:id="date3" layoutX="122.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="June 2022">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="12.0" fitWidth="17.0" layoutX="8.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/tag%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="15.0" fitWidth="17.0" layoutX="160.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/save-instagram.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="genre3" layoutX="26.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Science">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="pic3" fitHeight="150.0" fitWidth="108.0" layoutX="38.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/ML,Intern,2020.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn3" layoutX="2.0" layoutY="-3.0" mnemonicParsing="false" onAction="#read" opacity="0.0" prefHeight="150.0" prefWidth="174.0" text="Button" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane4" layoutX="930.0" layoutY="171.0">
+         <children>
+            <ImageView fx:id="pic4" fitHeight="150.0" fitWidth="115.0" layoutX="39.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/ML,Intern,2020.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="title4" fill="#35408e" layoutX="27.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Intake in Response to Food-Cue" textAlignment="CENTER" wrappingWidth="133.65399169921852">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="author4" layoutX="14.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J Larsen, K Man">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Text>
+            <Ellipse fill="#030303" layoutX="105.0" layoutY="222.0" radiusX="3.0" radiusY="3.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text fx:id="date4" layoutX="123.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="June 2022">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="12.0" fitWidth="17.0" layoutX="8.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/tag%20(1).png" />
+               </image>
+            </ImageView>
+            <Text fx:id="genre4" layoutX="26.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Science">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Text>
+            <Button fx:id="btn4" layoutX="9.0" layoutY="-12.0" mnemonicParsing="false" onAction="#read" opacity="0.0" prefHeight="158.0" prefWidth="155.0" text="Button" />
+            <ImageView fitHeight="15.0" fitWidth="17.0" layoutX="157.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/save-instagram.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="pane5" layoutX="242.0" layoutY="447.0" prefHeight="266.0" prefWidth="187.0">
+         <children>
+            <ImageView fx:id="pic5" fitHeight="159.0" fitWidth="115.0" layoutX="37.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/ML,Intern,2020.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="title5" fill="#35408e" layoutX="28.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Intake in Response to Food-Cue" textAlignment="CENTER" wrappingWidth="133.65399169921852">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="author5" layoutX="14.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J Larsen, K Man">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Text>
+            <Ellipse fill="#030303" layoutX="106.0" layoutY="240.0" radiusX="3.0" radiusY="3.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fitHeight="15.0" fitWidth="17.0" layoutX="172.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/save-instagram.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="date5" layoutX="131.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="June 2022">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Button fx:id="btn5" layoutX="5.0" layoutY="8.0" mnemonicParsing="false" onAction="#read" opacity="0.0" prefHeight="168.0" prefWidth="178.0" text="Button" />
+            <ImageView fitHeight="12.0" fitWidth="17.0" layoutX="8.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/tag%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="pane6" layoutX="473.0" layoutY="456.0">
+         <children>
+            <ImageView fx:id="pic6" fitHeight="158.0" fitWidth="115.0" layoutX="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/ML,Intern,2020.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="title6" fill="#35408e" layoutX="20.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Intake in Response to Food-Cue" textAlignment="CENTER" wrappingWidth="133.65399169921852">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="author6" layoutX="14.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J Larsen, K Man">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Text>
+            <Ellipse fill="#030303" layoutX="105.0" layoutY="230.0" radiusX="3.0" radiusY="3.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text fx:id="date6" layoutX="120.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="June 2022">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Text fx:id="genre6" layoutX="40.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Science">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="12.0" fitWidth="17.0" layoutX="16.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/tag%20(1).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn6" layoutX="2.0" layoutY="8.0" mnemonicParsing="false" onAction="#read" opacity="0.0" prefHeight="150.0" prefWidth="174.0" text="Button" />
+            <ImageView fitHeight="15.0" fitWidth="17.0" layoutX="161.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/save-instagram.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="pane7" layoutX="714.0" layoutY="462.0">
+         <children>
+            <ImageView fx:id="pic7" fitHeight="158.0" fitWidth="115.0" layoutX="30.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/ML,Intern,2020.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="title7" fill="#35408e" layoutX="23.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Intake in Response to Food-Cue" textAlignment="CENTER" wrappingWidth="133.65399169921852">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="author7" layoutX="14.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J Larsen, K Man">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Text>
+            <Ellipse fill="#030303" layoutX="105.0" layoutY="226.0" radiusX="3.0" radiusY="3.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text fx:id="date7" layoutX="120.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="June 2022">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="15.0" fitWidth="17.0" layoutX="161.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/save-instagram.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="12.0" fitWidth="17.0" layoutX="8.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/tag%20(1).png" />
+               </image>
+            </ImageView>
+            <Text fx:id="genre7" layoutX="30.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Science">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Text>
+            <Button fx:id="btn7" layoutX="3.0" layoutY="-7.0" mnemonicParsing="false" onAction="#read" opacity="0.0" prefHeight="168.0" prefWidth="174.0" text="Button" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane8" layoutX="930.0" layoutY="456.0" prefHeight="266.0" prefWidth="175.0">
+         <children>
+            <ImageView fx:id="pic8" fitHeight="158.0" fitWidth="115.0" layoutX="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/ML,Intern,2020.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="title8" fill="#35408e" layoutX="21.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Intake in Response to Food-Cue" textAlignment="CENTER" wrappingWidth="133.65399169921852">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="author8" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J Larsen, K Man">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Text>
+            <Ellipse fill="#030303" layoutX="99.0" layoutY="233.0" radiusX="3.0" radiusY="3.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text fx:id="date8" layoutX="121.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="June 2022">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="15.0" fitWidth="17.0" layoutX="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/save-instagram.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="12.0" fitWidth="17.0" layoutX="8.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/tag%20(1).png" />
+               </image>
+            </ImageView>
+            <Text fx:id="genre8" layoutX="31.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Science">
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
+            </Text>
+            <Button fx:id="btn8" layoutX="1.0" mnemonicParsing="false" onAction="#read" opacity="0.0" prefHeight="158.0" prefWidth="174.0" text="Button" />
+         </children>
+      </Pane>
+      <Text layoutX="226.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MY FAVORITES" wrappingWidth="187.0">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="31.0" layoutY="174.0" mnemonicParsing="false" onAction="#gotoHome" opacity="0.0" prefHeight="25.0" prefWidth="71.0" text="Button" />
+      <Button layoutX="27.0" layoutY="212.0" mnemonicParsing="false" onAction="#gotoDiscover" opacity="0.0" prefHeight="25.0" prefWidth="101.0" text="Button" />
+      <Button layoutX="27.0" layoutY="244.0" mnemonicParsing="false" onAction="#explore" opacity="0.0" prefHeight="25.0" prefWidth="147.0" text="Button" />
+      <Button layoutX="31.0" layoutY="389.0" mnemonicParsing="false" onAction="#gotoHistory" opacity="0.0" prefHeight="25.0" prefWidth="80.0" text="Button" />
+      <Button layoutX="1052.0" layoutY="52.0" mnemonicParsing="false" onAction="#gotoProfile" opacity="0.0" prefHeight="25.0" prefWidth="28.0" text="Button" />
+      <Button layoutX="1086.0" layoutY="52.0" mnemonicParsing="false" onAction="#Logout" opacity="0.0" prefHeight="25.0" prefWidth="28.0" text="Button" />
+      <Button layoutX="27.0" layoutY="728.0" mnemonicParsing="false" onAction="#about" opacity="0.0" prefHeight="25.0" prefWidth="80.0" text="Button" />
+      <Button layoutX="27.0" layoutY="759.0" mnemonicParsing="false" onAction="#contact" opacity="0.0" prefHeight="19.0" prefWidth="71.0" text="Button" />
+      <Text fx:id="genre5" layoutX="270.0" layoutY="711.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Science">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </Text>
+      <Text fx:id="genre2" layoutX="494.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Science">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
