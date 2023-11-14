@@ -9,6 +9,14 @@
             "name": "App",
             "request": "launch",
             "mainClass": "App",
+            "projectName": "CCDATRCL_PROJECT_COM222_52c27580",
+            "vmArgs": "--module-path C:/javafx-sdk-20.0.1/lib --add-modules javafx.controls,javafx.fxml,javafx.web"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
             "projectName": "Draft_Project_d099869",
             "vmArgs": "--module-path C:/javafx-sdk-20.0.1/lib --add-modules javafx.controls,javafx.fxml,javafx.web"
         },
